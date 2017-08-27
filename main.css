@@ -46,13 +46,6 @@
         font-family: 'Noticia Text', serif;
 }
 
-#skills-header{
-	margin-top: 15px;
-	margin-bottom: 30px;
-        font-family: 'Noticia Text', serif;
-        font-size: 50px;
-       
-}
 
 .topnav{
     width: 100%;
@@ -173,6 +166,16 @@ body{
 
 .tz-gallery{
 	background-color: #f6f6f6;
+}
+
+
+#skills-header{
+	margin-top: 15px;
+	margin-bottom: 40px;
+        font-family: 'Noticia Text', serif;
+        font-size: 50px;
+        
+       
 }
 
 #skills-img-column{
