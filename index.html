@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+<link rel="stylesheet" href="fluid-gallery.css">
+<link rel="stylesheet" href="social.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+	<script>
+	$(document).ready(function(){
+		$("#portfolio-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#portfolio-row").offset().top
+			}, 2000); 
+		});
+		
+		$("#resume-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#resume-row").offset().top
+			}, 2000); 
+		});
+		
+		$("#skills-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#new-skills").offset().top
+			}, 2000); 
+		});
+		
+		$("#contact-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#contact-row").offset().top
+			}, 2000); 
+		});
+		
+		$("#top-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#top-logo").offset().top
+			}, 2000); 
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+            <div id="top-logo">
+                <h1>Gene Lee</h1>
+                <h2>Software Developer & Game Designer</h2>
+            </div>
+            <div id="header">
+                <div class="topnav">
+                <div id="navlinks">
+                    <ul>
+			<li id="skills-link" class="nav-link"><a href="#new-skills">SKILLS</a></li>
+                        <li id="portfolio-link" class="nav-link"><a href="#portfolio-row">PORTFOLIO</a></li>
+                        <li id="resume-link" class="nav-link"><a href="#resume-row">RESUME</a></li>
+			<li id="contact-link" class="nav-link"><a href="#contact-row">CONTACT</a></li>
+                    </ul>
+                </div>
+                </div>  
+            </div> 
+        
+                    <div id="about-row">
+			<div class="row">
+                            <div id="about-text">
+                                <h3 class='text-center'>I'm a front-end developer and game designer</h3>
+                                 <p>I am a student at George Mason University </p>
+				<p>I am currently learning to be a full-stack developer</p>
+                                <p>I can program in java and c#, as well as do 3d art and design in Unity</p>
+                            </div>
+			</div>
+                    </div>
+		<div class="row" id="new-skills">
+                    	<h1 id="skills-header">Skills</h3>
+			<div class="container-fluid col-md-8 col-md-offset-2 col-sm-offset-1">
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="3dsMax.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="CSS3.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="html5.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="java.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="javascript.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="maya_logo.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="unity.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="motionbuilder.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="unrealengine.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="visualstudio.png">
+				</div>
+				<div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="c.png">
+				</div>
+                                <div id="sk-img" class="col-sm-4 col-md-3">
+					<img src="bootstrap.png">
+				</div>
+			</div>    
+		</div>
+			
+<!--			<div class="row" id="resume-row">
+                            		<h1>Resume</h1>
+				<div class="col-md-7 col-sm-6">
+				<p class='text'>Take a look at my resume</p>
+				</div>
+				<div class="col-md-5 col-sm-6">
+					<a href="Resume%20Gene%20Lee.pdf">
+					<img class="center-block img-responsive" id="resume-pdf" src="pdf.png" style="width:140px;height:140px;">
+					</a>
+				</div>
+			</div>-->
+
+			<div class="tz-gallery" id="portfolio-row">
+				<h1>Projects</h1>
+				<div class="row">
+
+					<div class="col-sm-12 col-md-4">
+						<a class="lightbox" href="../images/bridge.jpg">
+							<img src="GeneManFaceFront.png" alt="Bridge">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="../images/park.jpg">
+							<img src="dog.jpg" alt="Park">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="../images/tunnel.jpg">
+							<img src="dog.jpg" alt="Tunnel">
+						</a>
+					</div>
+					<!---<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="../images/traffic.jpg">
+							<img src="dog.jpg" alt="Traffic">
+						</a>
+					</div>--->
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="../images/coast.jpg">
+							<img src="dog.jpg" alt="Coast">
+						</a>
+					</div> 
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="../images/rails.jpg">
+							<img src="dog.jpg" alt="Rails">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<a class="lightbox" href="../images/rails.jpg">
+							<img src="dog.jpg" alt="Rails">
+						</a>
+					</div>
+				</div>
+			</div>
+			
+                        <div class="row" id="resume-new">
+                            <div class="col-xs-6"><p class="pull-right">Resume:</p></div>
+                            <div class="col-xs-6">
+                                <a href="Resume%20Gene%20Lee.pdf">
+					<img class="pull-left" id="resume-pdf" src="pdf.png" style="width:140px;height:140px;">
+				</a>
+                            </div>			
+			</div>
+
+
+			<div id="row">
+                            <div id="contact-row" class="col-md-12">
+                                <h1>Contact</h1>                           
+                                <div class="col-md-12">
+                                    <ul class="social-network social-circle">
+                                        <li><a href="#" class="icoTwitter" title="Email"><i class="fa fa-envelope"></i></a></li>
+                                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://github.com/Glee100" class="icoGoogle" title="Github"><i class="fa fa-git"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/gene-lee-478433100/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>				
+				</div>   
+                            </div> 
+			</div>
+		
+			
+        <div class="container-fluid" id="footer">
+        	<div class="row col-md-12">
+                    &copy; 2017 Gene Lee        <span><img id="top-link" src="top.png"></span>
+                </div>
+        </div>
+</body>
+</html>
+
+
