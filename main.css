@@ -97,11 +97,11 @@
     
 #top-logo{
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: #1b1b1b;
     padding: 10px;
     margin-bottom: 45px;
     letter-spacing: 0.4em;
-    color: #161B1C;
+    color: #f6f6f6;
 	font-family: 'Play', sans-serif;
 	<!---background-image: url("C:/Users/Gene/Desktop/portfolio_website/bg_image.jpg");  --->
         
@@ -165,7 +165,7 @@ body{
 }
 
 .tz-gallery{
-	background-color: #f6f6f6;
+	background-color:  #1b1b1b;
 }
 
 
@@ -201,7 +201,7 @@ body{
 }
 
 #portfolio-row h1{
-	color: #1b1b1b;
+	color: #f6f6f6;
 	text-align: center;
 	font-family: 'Noticia Text', serif;
         font-size: 50px;
@@ -212,8 +212,8 @@ body{
 #contact-row{
 	height: 180px;
 	text-align: center;
-	background-color: #f6f6f6;
-	color: #1b1b1b;
+	background-color:  #1b1b1b;
+	color: #f6f6f6;
 
 }
 
@@ -326,7 +326,7 @@ hr.style-seven {
     margin-top: 40px;
     height: 30px;
     border-style: solid;
-    border-color: black;
+    border-color: #f6f6f6;
     border-width: 1px 0 0 0;
     border-radius: 20px;
     width: 50%
@@ -337,7 +337,7 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     height: 30px;
     margin-top: -31px;
     border-style: solid;
-    border-color: black;
+    border-color: #f6f6f6;
     border-width: 0 0 1px 0;
     border-radius: 20px;
     
