@@ -15,9 +15,7 @@
 
 #about-row{
         height: 400px;
-	#padding: 15%;
 	font-family: 'Play', sans-serif;
-        #font-family: 'Noticia Text', serif;
 	color: white;
 	background-image: url("C:/Users/Gene/Desktop/portfolio_website/portfolio_website/aboutpic.png");
 }
@@ -25,6 +23,11 @@
 #about-text{
     text-align: center;
         margin-top: 34px;
+        color: #161B1C;
+        #background-color: #f2f2f2;
+        background-color: #DDECF5;
+        padding-bottom: 100px;
+        border-radius: 8px;
 }
 #about-text p{
     	font-size: 24px;
@@ -34,7 +37,7 @@
     font-size: 40px;
     font-family: 'Noticia Text', serif;
     weight: strong;
-    padding-top: 30px;
+    padding-top: 70px;
     margin-bottom: 24px;
 }
 
@@ -44,33 +47,12 @@
 }
 
 #skills-header{
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-bottom: 30px;
         font-family: 'Noticia Text', serif;
         font-size: 50px;
+       
 }
-
-/*#resume-row{
-	color: #1b1b1b;
-	font-size: 24px;
-	text-align: center;
-	margin: auto;
-	background-image: url("C:/Users/Gene/Desktop/portfolio_website/portfolio_website/resume.jpeg");
-	height: 500px;
-	font-family: 'Play', sans-serif;
-}
-
-#resume-row h1{
-	margin-top: 30px;
-        font-family: 'Noticia Text', serif;
-        font-size: 50px;
-}
-
-#resume-row p{
-	margin-top: 10%;
-}*/
-
-
 
 .topnav{
     width: 100%;
@@ -81,8 +63,7 @@
 
 .topnav a {
     display: block;
-    color: #f2f2f2;
-    #color: #1b1b1b;
+    color: white;
     text-align: center;
     padding: 14px 18px;
     text-decoration: none;
@@ -94,7 +75,6 @@
 }
 
 .topnav a:hover {
-    #background-color: #18344e;
     color: white;
     text-decoration: none;
 }
@@ -108,11 +88,10 @@
     list-style-type: none;
     display: inline-block;
     margin: 5px;
-    color: red;
+
 }
 
 #content{
-    background-color:#1b1b1b;
     color: #18344e;
     font-size: 16px;
     text-align: center;
@@ -124,14 +103,12 @@
 }
     
 #top-logo{
-    top: 0;
     text-align: center;
-    background-color: #1b1b1b;
-    #background-color: white;
+    background-color: #f6f6f6;
     padding: 10px;
-    margin-bottom: 35px;
-    color: white;
-    #color: #161B1C;
+    margin-bottom: 45px;
+    letter-spacing: 0.4em;
+    color: #161B1C;
 	font-family: 'Play', sans-serif;
 	<!---background-image: url("C:/Users/Gene/Desktop/portfolio_website/bg_image.jpg");  --->
         
@@ -141,9 +118,6 @@
             font-size: 70px;
         }
         
-        #top-logo h2{
-            font-size: 45px;
-        }
 
 #wrapper{
     min-height: 100%;
@@ -155,7 +129,6 @@ body{
     margin: 0;
     height: 100%;
     padding: 0;
-	#background-color: #1b1b1b;
 }
 
 
@@ -198,10 +171,8 @@ body{
   -ms-transform: translate(-50%, -50%)
 }
 
-
-
 .tz-gallery{
-	background-color: #1b1b1b;
+	background-color: #f6f6f6;
 }
 
 #skills-img-column{
@@ -218,7 +189,7 @@ body{
 }
 
 #new-skills{
-	background-color: white;
+	background-color: #f6f6f6;
 	text-align: center;
 	font-family: 'Play', sans-serif;
         margin-bottom: 0px;
@@ -227,7 +198,7 @@ body{
 }
 
 #portfolio-row h1{
-	color: white;
+	color: #1b1b1b;
 	text-align: center;
 	font-family: 'Noticia Text', serif;
         font-size: 50px;
@@ -238,8 +209,8 @@ body{
 #contact-row{
 	height: 180px;
 	text-align: center;
-	background-color: #1b1b1b;
-	color: white;
+	background-color: #f6f6f6;
+	color: #1b1b1b;
 
 }
 
@@ -256,23 +227,6 @@ body{
 	margin-right: 15px;
 }
 
-#resume-new{
-	height: 250px;
-	text-align: center;
-	background-color: #1b1b1b;
-	color: white;
-
-}
-
-#resume-new p{
-    margin-top: 40px;
-    font-size: 50px;
-    	font-family: 'Noticia Text', serif;
-}
-
-#resume-pdf{
-	margin-top: 50px;
-}
 
 
 html, body {
@@ -365,3 +319,23 @@ a.socialIcon:hover, .socialHoverClass {
  background-color: #D3D3D3;   
 }
 
+hr.style-seven {
+    margin-top: 40px;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 50%
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+    
+}
