@@ -23,11 +23,9 @@
 #about-text{
     text-align: center;
         margin-top: 34px;
-        color: #161B1C;
-        #background-color: #f2f2f2;
-        background-color: #DDECF5;
+        color: #f6f6f6;
+        background-color: #1b1b1b;
         padding-bottom: 100px;
-        border-radius: 8px;
 }
 #about-text p{
     	font-size: 24px;
