@@ -65,9 +65,14 @@
 
 }
 
-.topnav a:hover {
+/*.topnav a, a:hover, a:active, a:visited, a:focus {
     color: white;
     text-decoration: none;
+}*/
+
+.topnav a, .topnav a:hover, .topnav a:active, .topnav a:visited, .topnav a:focus{
+    text-decoration: none !important;
+    color: white;
 }
 
 #navlinks{
