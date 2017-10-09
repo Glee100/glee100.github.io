@@ -16,7 +16,26 @@
     <script>
         baguetteBox.run('.tz-gallery');
     </script>
-    
+    	<script>
+	$(document).ready(function(){
+		$("#portfolio-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#portfolio-row").offset().top
+			}, 2000); 
+		});
+		$("#contact-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#contact-row").offset().top
+			}, 2000); 
+		});
+		
+		$("#top-link").click(function() {
+			$('html, body').animate({
+				scrollTop: $("#top-logo").offset().top
+			}, 2000); 
+		});
+	});
+	</script>
 </head>
 <body>
             <div id="top-logo">
@@ -30,7 +49,6 @@
                     <ul>
 			<li class="nav-link"><a href="/index.html">HOME</a></li>
                         <li id="portfolio-link" class="nav-link"><a href="#portfolio-row">PORTFOLIO</a></li>
-<!--                        <li id="resume-link" class="nav-link"><a href="#resume-row">RESUME</a></li>-->
                         <li id="resume-link" class="nav-link"><a href="Resume%20Gene%20Lee.pdf" target="_blank">RESUME</a></li>
                         <li id="contact-link" class="nav-link"><a href="#contact-row">CONTACT</a></li>
                     </ul>
