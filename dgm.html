@@ -1,61 +1,123 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
-<link rel="stylesheet" href="fluid-gallery.css">
-<link rel="stylesheet" href="social.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta title="Dulles Glass and Mirror">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
-    	<script>
-	$(document).ready(function(){
-		$("#portfolio-link").click(function() {
-			$('html, body').animate({
-				scrollTop: $("#portfolio-row").offset().top
-			}, 2000); 
-		});
-		$("#contact-link").click(function() {
-			$('html, body').animate({
-				scrollTop: $("#contact-row").offset().top
-			}, 2000); 
-		});
-		
-		$("#top-link").click(function() {
-			$('html, body').animate({
-				scrollTop: $("#top-logo").offset().top
-			}, 2000); 
-		});
-	});
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+	
+	<link rel="stylesheet" href="fluid-gallery.css">
+	<link rel="stylesheet" href="social.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+	<script>
+		baguetteBox.run('.tz-gallery');
 	</script>
-</head>
-<body>
-            <div id="top-logo">
-			<a href="/index.html"><img src = "initials.png" height="100" width="100"></a>
+
+	<style>
+			
+			.navbar .navbar-nav {
+				display: inline-block;
+				float: none;
+			}
+
+			.navbar .navbar-collapse {
+				text-align: center;
+			}
+			
+			.body{
+				background-color: #333;
+			}
+		
+			.navbar {
+				font-family: 'Noticia Text', serif;
+				margin-bottom: 0;
+				background-color: rgb(221, 97, 74);
+				z-index: 9999;
+				border: 0;
+				font-size: 16px !important;
+				line-height: 1.42857143 !important;
+				letter-spacing: 4px;
+				border-radius: 0;
+			}
+
+			.navbar li a, .navbar .navbar-brand {
+				color: #fff !important;
+			}
+
+			.navbar-nav li a:hover, .navbar-nav li.active a {
+				color: rgb(221, 97, 74) !important;
+				background-color: #fff !important;
+			}
+
+			.navbar-default .navbar-toggle {
+				border-color: transparent;
+				color: #fff !important;
+			}
+
+			.navbar-brand-centered {
+				position: absolute;
+				left: 50%;
+				display: block;
+				width: 160px;
+				text-align: center;
+				background-color: transparent;
+			}
+			.navbar>.container .navbar-brand-centered, 
+			.navbar>.container-fluid .navbar-brand-centered {
+				margin-left: -80px;
+			}
+			
+			.navbar-collapse {
+				padding-right: 15px;
+				padding-left: 15px;
+				overflow-x: visible;
+				-webkit-overflow-scrolling: touch;
+				border-top: 1px solid transparent;
+				-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+				box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+			}
+			
+			
+			.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+				border-color: rgb(221, 97, 74);
+			}
+
+			
+		</style>
+	</head>
+	<body>
+	
+	<div id="top-logo">
+                <a href="/index.html"><img src = "initials.png" height="100" width="100"></a>
                 <h1>GENE LEE</h1>
                 <h4>Software & Game Developer</h4>
-            </div>
-            <div id="header">
-                <div class="topnav">
-                <div id="navlinks">
-                    <ul>
-			<li class="nav-link"><a href="/index.html">HOME</a></li>
-                        <li id="portfolio-link" class="nav-link"><a href="#portfolio-row">PORTFOLIO</a></li>
-                        <li id="resume-link" class="nav-link"><a href="Resume%20Gene%20Lee.pdf" target="_blank">RESUME</a></li>
-                        <li id="contact-link" class="nav-link"><a href="#contact-row">CONTACT</a></li>
-                    </ul>
-                </div>
-                </div>  
-            </div> 
+    </div>
+			<nav class="navbar navbar-default navbar-default navbar-collapse">
+			  <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				  </button> 
+
+				</div>
+				<div class="navbar-collapse collapse in" id="myNavbar" aria-expanded="true" style="">
+				  <ul class="nav navbar-nav">
+					<li><a href="/index.html">HOME</a></li>
+					<li><a href="/portfolio.html">PORTFOLIO</a></li>
+					<li><a href="Resume%20Gene%20Lee.pdf" target="_blank">RESUME</a></li>
+					<li><a href="#contact-row">CONTACT</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
     
     <div class="row">
         <p style="margin-top: 20px;"><img class="img-responsive center-block" src="DGM2.png" alt="oldage game project"></p>
@@ -70,6 +132,23 @@
                     &copy; 2017 Gene Lee   
                 </div>
         </div>
+							<script>
+				$(document).ready(function(){
+
+					
+					$("#contact-link").click(function() {
+						$('html, body').animate({
+							scrollTop: $("#contact-row").offset().top
+						}, 2000); 
+					});
+					
+					$("#top-link").click(function() {
+						$('html, body').animate({
+							scrollTop: $("#top-logo").offset().top
+						}, 2000); 
+					});
+				});
+	</script>
     
 </body>
 </html>

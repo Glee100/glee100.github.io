@@ -27,10 +27,9 @@
         color: #f6f6f6;
         background-color: #1b1b1b;
         padding-bottom: 5px;
+		font-size: 24px;
 }
-#about-text p{
-    	font-size: 24px;
-}
+
 
 #about-text h3{
     font-size: 40px;
@@ -45,49 +44,6 @@
         font-family: 'Noticia Text', serif;
 }
 
-
-.topnav{
-    width: 100%;
-    height: 65px;
-    #background-color:#595959;
-    background-color: rgb(221, 97, 74);
-}
-
-.topnav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 18px;
-    text-decoration: none;
-    font-size: 22px;
-	#font-family: 'Play', sans-serif;
-	#font-family: 'Roboto Slab', serif;
-         font-family: 'Noticia Text', serif;
-
-}
-
-/*.topnav a, a:hover, a:active, a:visited, a:focus {
-    color: white;
-    text-decoration: none;
-}*/
-
-.topnav a, .topnav a:hover, .topnav a:active, .topnav a:visited, .topnav a:focus{
-    text-decoration: none !important;
-    color: white;
-}
-
-#navlinks{
-    display: block;
-    text-align: center;
-}
-
-.nav-link{
-    list-style-type: none;
-    display: inline-block;
-    margin: 5px;
-	width: 200px;
-
-}
 
 #content{
     color: #18344e;
@@ -104,7 +60,7 @@
     text-align: center;
     background-color: #1b1b1b;
     padding: 10px;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
     letter-spacing: 0.4em;
     color: #f6f6f6;
 	font-family: 'Play', sans-serif;
@@ -145,10 +101,10 @@ body{
   opacity: 1;
 }
 
-.container {
+/*.container {
     position: relative;
     width: 50%;
-}
+}*/
 
 .image {
   opacity: 1;
@@ -236,11 +192,11 @@ body{
 }
 
 
-
+/*
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-}
+}*/
 
 
 /* footer social icons */
@@ -378,4 +334,44 @@ hr.style-seven:before { /* Not really supposed to work, but does */
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+@media only screen and (max-width: 375px) {
+	#about-text{
+		margin: 0;
+	}
+
+   #about-text p { 
+      font-size: 16px; 
+   }
+   
+   #about-text h3{
+	   font-size: 30px;
+	   padding-top: 30px;
+   }
+   
+   #about-row{
+	   height: auto;
+   }
+   
+   #top-logo h1{
+	   font-size: 50px;
+   }
+   
+   #skills-header{
+	   font-size: 40px;
+   }
+   
+   #portfolio-row h1{
+	   font-size: 40px;
+   }
+   
+   #contact-row h1{
+	   font-size: 40px;
+   }
+   
+   .middle{
+	   left: 50%;
+   }
+
 }
