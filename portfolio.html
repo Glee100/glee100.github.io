@@ -5,189 +5,325 @@
     <meta name="description" content="This is my online portfolio for some of my web development and game design projects">
 	<meta title="Portfolio | Gene Lee">
 	<title>Portfolio | Gene Lee</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
-	
-	<link rel="stylesheet" href="fluid-gallery.css">
-	<link rel="stylesheet" href="social.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-	<script>
-		baguetteBox.run('.tz-gallery');
-	</script>
-
-	<style>
-			
-			.navbar .navbar-nav {
-				display: inline-block;
-				float: none;
-			}
-
-			.navbar .navbar-collapse {
-				text-align: center;
-			}
-			
-
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<!---<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">--->
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="fluid-gallery.css">
+		        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+		<style>/*
+					   Variables
+			  ********************************** */
+			/* *********************************
+			   Some Style Overrides on Bootstrap
+			  ********************************** */
 		
-			.navbar {
-				font-family: 'Noticia Text', serif;
-				margin-bottom: 0;
-				background: #DD614A; /* For browsers that do not support gradients */
-				background: -webkit-linear-gradient(left top, #DD614A, #D94E35); /* For Safari 5.1 to 6.0 */
-				background: -o-linear-gradient(bottom right, #DD614A, #D94E35); /* For Opera 11.1 to 12.0 */
-				background: -moz-linear-gradient(bottom right, #DD614A, #D94E35); /* For Firefox 3.6 to 15 */
-				background: linear-gradient(to bottom right, #DD614A, #D94E35); /* Standard syntax */
-				z-index: 9999;
-				border: 0;
-				font-size: 16px !important;
-				line-height: 1.42857143 !important;
-				letter-spacing: 4px;
-				border-radius: 0;
+
+			.navbar-inverse {
+			  /*background: rgba(62, 195, 246, 0);*/
+			  background: rgba(232,203,192,0);
+			  border-bottom: none;
+			  border-color: transparent;
 			}
 
-			.navbar li a, .navbar .navbar-brand {
-				color: #fff !important;
+			.navbar-inverse .navbar-toggle {
+			  border: 1px solid #333;
+			  /*border-color: rgba(255, 255, 255, 0.7);*/
 			}
 
-			.navbar-nav li a:hover, .navbar-nav li.active a {
-				color: rgb(221, 97, 74) !important;
-				background-color: #fff !important;
+			.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+			  border-color: transparent;
+			}
+			@media (max-width: 767px) {
+			  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+				background: rgba(255, 255, 255, 0.75);
+			  }
 			}
 
-			.navbar-default .navbar-toggle {
-				border-color: transparent;
-				color: #fff !important;
+			.navbar-inverse .navbar-nav > li > a {
+			  color: #333;
 			}
 
-			.navbar-brand-centered {
-				position: absolute;
-				left: 50%;
-				display: block;
-				width: 160px;
-				text-align: center;
-				background-color: transparent;
+			.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+			  color: #22F;
 			}
-			.navbar>.container .navbar-brand-centered, 
-			.navbar>.container-fluid .navbar-brand-centered {
-				margin-left: -80px;
+			li a {
+				font-size: 18px;
+			  text-decoration: none;
+			  position: relative;
+			  padding: 6px 0;
+			  -webkit-transition: all 0.8s;
+			  transition: all 0.8s;
+			  color: lightblue;
+			}
+			li a:after {
+			  content: '';
+			  width: 0%;
+			  margin-left: 50%;
+			  height: 2px;
+			  bottom: 0;
+			  left: 0;
+			  border-radius: 40%;
+			  position: absolute;
+			  transition: all 0.5s;
+			}
+			li a:hover:after {
+			  background-color: white;
+			  width: 60%;
+			  margin-left: 20%;
+			  box-shadow: 0px 0px 10px white;
+			}
+			li a.active:after {
+			  background-color: white;
+			  width: 60%;
+			  margin-left: 20%;
+			  box-shadow: 0px 0px 10px white;
+			}
+
+			/* *********************************
+					   Toolbar Logo
+			  ********************************** */
+			.small-logo-container {
+			  padding-top: 50px;
+			  			  padding-left: 10px;
+			  height: 50px;
+			  overflow: hidden;
+			  position: absolute;
+			}
+
+			.small-logo {
+			font-family: 'Rubik Mono One', sans-serif;
+			  #color: white;
+			  color: #333;
+			  /*font-size: 2.5em;*/
+			  font-size: 34px;
+			  padding-bottom: 2px;
+			}
+
+			/* *********************************
+					   Big Logo
+			  ********************************** */
+			.big-logo-row {
+			      background: #ECE9E6; /* For browsers that do not support gradients */
+				background: -webkit-linear-gradient(#ECE9E6, #FFFFFF);
+				background: -o-linear-gradient(#ECE9E6, #FFFFFF); 
+				background: -moz-linear-gradient(#ECE9E6, #FFFFFF); 
+				background: linear-gradient(#ECE9E6, #FFFFFF);
+			}
+			.big-logo-row .big-logo-container {
+
+			  height: 400px;
+			}
+			.big-logo-row #h1 {
+			color: #333;
+			  font-size: 4em;
+			  margin-top: 10%;
+				font-size: 40px;
+						font-family: 'Rubik Mono One', sans-serif;
+			}
+
+			@media (min-width: 375px) {
+			#about-row p{
+				font-size: 24px;
+			  }
+			
+			.tz-gallery {
+					padding: 20px;
+				}	
+			
+			.big-logo-row #h1 {
+				font-size: 4.5em;
+			  }
+			
 			}
 			
-			.navbar-collapse {
-				padding-right: 15px;
-				padding-left: 15px;
-				overflow-x: visible;
-				-webkit-overflow-scrolling: touch;
-				border-top: 1px solid transparent;
-				-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-				box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+			@media (min-width: 400px) {
+			  .big-logo-row #h1 {
+				font-size: 4.5em;
+			  }
+			  
+			  
 			}
-			
-			
-			.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-				border-color: #D94E35;
+			@media (min-width: 440px) {
+			  .big-logo-row #h1 {
+				font-size: 5.5em;
+			  }
+			}
+			@media (min-width: 500px) {
+			  .big-logo-row #h1 {
+				font-size: 6.5em;
+			  }
+			}
+			@media (min-width: 630px) {
+			  .big-logo-row #h1 {
+				font-size: 7.5em;
+			  }
+			}
+			@media (min-width: 768px) {
+			  .big-logo-row #h1 {
+				font-size: 9em;
+				padding-bottom: 30px;
+			  }
+			  .tz-gallery {
+					padding: 40px;
+				}
+			  
+			}
+			@media (min-width: 1200px) {
+			  .big-logo-row #h1 {
+				font-size: 11em;
+			  }
+			 
 			}
 
 			
-		</style>
-	</head>
-	<body>
-	
-	<div id="top-logo">
-                <a href="/index.html"><img src = "initials.png" height="100" width="100"></a>
-                <h1>GENE LEE</h1>
-                <h4>Software & Game Developer</h4>
-    </div>
-			<nav class="navbar navbar-default navbar-default navbar-collapse">
-			  <div class="container">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				  </button> 
+		</style>   
+  
+</head>
 
-				</div>
-				<div class="navbar-collapse collapse in" id="myNavbar" aria-expanded="true" style="">
-				  <ul class="nav navbar-nav">
-					<li><a href="/index.html">HOME</a></li>
-					<li><a href="/portfolio.html">PORTFOLIO</a></li>
-					<li><a href="Resume%20Gene%20Lee.pdf" target="_blank">RESUME</a></li>
-					<li><a id="contact-link" href="#contact-row">CONTACT</a></li>
-				  </ul>
-				</div>
-			  </div>
-			</nav>
-    
-    
-    <div class="tz-gallery" id="portfolio-row">
-                                    <div class="row">
-                                            <div class="col-sm-12 col-md-4">
-                                                    <a class="lightbox" href="#">
-                                                            <img src="firstport.jpg" alt="3d face model">
-                                                    </a>
-                                                <div class="text-center" style="margin-top:5px; margin-bottom: 5px; color:#f6f6f6">Human head 3d model, unfinished</div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4">
-                                                    <a class="lightbox" href="/dgm.html">
-                                                            <img src="DGM2.png" alt="dulles glass and mirror">
-                                                    </a>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4">
-                                                    <a class="lightbox" href="/oldage.html">
-                                                            <img src="oldage-gene.png" alt="oldage game project">
-                                                    </a>
-                                            </div>
-                                            <!---<div class="col-sm-6 col-md-4">
-                                                    <a class="lightbox" href="../images/traffic.jpg">
-                                                            <img src="dog.jpg" alt="Traffic">
-                                                    </a>
-                                            </div>--->
-                                    </div>
-                            </div>
-    
-    			<div id="row">
-                            <hr class="style-seven">
-                            <div id="contact-row" class="col-md-12">
-                                <h1>Contact</h1>                           
-                                <div class="col-md-12">
-                                    <ul class="social-network social-circle">
-                                        <li><a href="#" class="icoTwitter" title="Email"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="Resume%20Gene%20Lee.pdf" class="icoVimeo" title="Resume"><i class="fa fa-file-pdf-o"></i></a></li>
-                                        <li><a href="https://github.com/Glee100" class="icoGoogle" title="Github"><i class="fa fa-git"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/gene-lee-478433100/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>				
-				</div>   
-                            </div> 
-			</div>
-		
-			
-        <div class="container-fluid" id="footer">
-        	<div class="row col-md-12">
-                    &copy; 2017 Gene Lee        <span><img id="top-link" src="top.png"></span>
-                </div>
+<body id="grad">
+	   <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="small-logo-container">
+            <a class="small-logo" href="#">Gene Lee</a>
+          </div>
         </div>
-		<script>
-				$(document).ready(function(){
+        <div class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+		  	<li><a href="/index.html">Home</a></li>
+            <li class="active"><a href="#">Portfolio</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
-					
-					$("#contact-link").click(function() {
-						$('html, body').animate({
-							scrollTop: $("#contact-row").offset().top
-						}, 2000); 
-					});
-					
-					$("#top-link").click(function() {
-						$('html, body').animate({
-							scrollTop: $("#top-logo").offset().top
-						}, 2000); 
-					});
-				});
-	</script>
+    <div class="container-fluid big-logo-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 big-logo-container">
+            <div id="h1" class="big-logo font-effect-3d-float">Gene Lee</div>
+			<p style="color: #B20000; font-family: 'Rubik Mono One', sans-serif; font-size: 20px;">SOFTWARE & GAME DEVELOPER</p>
+			<p class="text-center"><i class="fa-5x fa fa-angle-down" style="color: black; margin-top: 30vh;" aria-hidden="true"></i></p>
+          </div><!--/.col-xs-12 -->
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.container-fluid -->
+
+	<div class="gallery-container">
+	
+
+
+	    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="#">
+                    <img src="firstport-small.jpg" alt="3d face model">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="/dgm.html">
+                    <img src="DGM2.png" alt="dulles glass and mirror">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="/oldage.html">
+                    <img src="oldage-gene.png" alt="oldage game project">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/traffic.jpg">
+                    <img src="file:///C:/Users/Gene/Desktop/GENENewPort/images/traffic.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/coast.jpg">
+                    <img src="file:///C:/Users/Gene/Desktop/GENENewPort/images/coast.jpg" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/rails.jpg">
+                    <img src="file:///C:/Users/Gene/Desktop/GENENewPort/images/rails.jpg" alt="Rails">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <div class=" col-xs-12 afooter">
+      <div class="fa-container">
+              <a href='#'><i class="fa fa-envelope fa-3x fa-fw"></i></a>
+              <a href='Resume%20Gene%20Lee.pdf' target="_blank"><i class="fa fa-file-pdf-o fa-3x fa-fw"></i></a>
+              <a href='https://github.com/Glee100'><i class="fa fa-git fa-3x fa-fw"></i></a>
+              <a href='https://www.linkedin.com/in/gene-lee-478433100/'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
+            <section style="margin-top: 15px;">© 2017 Gene Lee</section>
+      </div>
+    </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+								var navbarHeight = $('.navbar').height(); 
+
+$(window).scroll(function() {
+  /*var navbarColor = "62,195,246";//color attr for rgba*/
+  var navbarColor = "236, 233, 230";  
+
+
+  var smallLogoHeight = $('.small-logo').height();
+  var bigLogoHeight = $('.big-logo').height();
+  
+  
+  var smallLogoEndPos = 0;
+  var smallSpeed = (smallLogoHeight / bigLogoHeight);
+  
+  var ySmall = ($(window).scrollTop() * smallSpeed); 
+  
+  var smallPadding = navbarHeight - ySmall;
+  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
+  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
+  if (smallPadding < 0) { smallPadding = 0; }
+  
+  $('.small-logo-container ').css({ "padding-top": smallPadding});
+  
+  var navOpacity = ySmall / smallLogoHeight; 
+  if  (navOpacity > 1) { navOpacity = 1; }
+  if (navOpacity < 0 ) { navOpacity = 0; }
+  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
+  $('.navbar').css({"background-color": navBackColor});
+  
+  var shadowOpacity = navOpacity * 0.4;
+  if ( ySmall > 1) {
+    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
+  } else {
+    $('.navbar').css({"box-shadow": "none"});
+  }
+  
+  
+  
+});</script>
 </body>
+
+
+
 </html>
