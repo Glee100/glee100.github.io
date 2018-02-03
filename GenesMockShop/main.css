@@ -1,0 +1,404 @@
+html,body
+{
+    overflow-x: hidden; 
+}
+
+#very-top{
+	background-color: #333;
+	margin-top: 0;
+	padding-top: 0;
+	height: 40px;
+
+}
+
+#free-shipping{
+	background-color: #032366;
+	margin-top: 0;
+	padding-top: 0;
+	height: 35px;
+    color: #ffffff;
+    letter-spacing: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+
+#shopping-cart{
+	margin-right: 8px;
+	margin-top: 11px;
+}
+
+#first-slider .main-container {
+  padding-top: 100px;
+  
+}
+
+
+#first-slider .slide1 h2, #first-slider .slide2 h2, #first-slider .slide3 h2, #first-slider .slide4 h2{
+    color: #fff;
+	text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+    font-size: 75px;
+      text-transform: uppercase;
+      font-weight:700;
+}
+
+#first-slider .slide1 h3,#first-slider .slide2 h3,#first-slider .slide3 h3,#first-slider .slide4 h3{
+    color: #032366;
+    font-size: 48px;
+      text-transform: uppercase;
+      font-weight:700;
+}
+#first-slider .slide1 .text-left ,#first-slider .slide3 .text-left{
+    padding-left: 40px;
+}
+
+
+#first-slider .carousel-indicators {
+  bottom: 0;
+}
+#first-slider .carousel-control.right,
+#first-slider .carousel-control.left {
+  background-image: none;
+}
+#first-slider .carousel .item {
+  min-height: 425px; 
+  max-height: 650px;
+  height: 100%;
+  width:100%;
+}
+
+
+.carousel-inner .item .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#first-slider h3{
+  animation-delay: 1s;
+}
+#first-slider h4 {
+  animation-delay: 2s;
+}
+#first-slider h2 {
+  animation-delay: 3s;
+}
+
+
+#first-slider .carousel-control {
+    width: 6%;
+        text-shadow: none;
+}
+
+
+#first-slider h1 {
+  text-align: center;  
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#first-slider .p {
+  padding-top: 125px;
+  text-align: center;
+}
+
+#first-slider .p a {
+  text-decoration: underline;
+}
+#first-slider .carousel-indicators li {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255,255,255,.4);
+  border:none;
+}
+#first-slider .carousel-indicators .active{
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+  border:none;
+}
+
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-control .fa-angle-right, .carousel-control .fa-angle-left {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}
+.carousel-control .fa-angle-left{
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: -15px;
+    font-size: 30px;
+    color: #fff;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 53px;
+}
+.carousel-control .fa-angle-right{
+    right: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: -15px;
+    font-size: 30px;
+    color: #fff;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 53px;
+}
+.carousel-control {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/* Global Button */
+.transparent_btn {
+	display: inline-block;
+	padding: 10px 14px;
+	/*color: #FFF;*/
+	color: red;
+	/*border: 1px solid #FFF;*/
+	border: 3px solid red;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 120%;
+	background-color: rgba(255,255,255, 0);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
+	cursor: pointer;
+}
+.transparent_btn:hover {
+	background-color: rgba(255,255,255, 0.3);
+	color: #FFF;
+}
+
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+
+#first-slider .slide1 {
+    background-image: url(friends-jeans.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#first-slider .slide3 {
+  background-image: url(kid-jeans.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+}
+#first-slider .slide4 {
+  background-image: url(jeans-jeans.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#salee{
+	background-image: url(snow.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 70vh;
+	margin-bottom: 0;
+
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+      
+}
+@media screen and (max-width: 640px){
+      
+}
+
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 180px;
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  top: 105%;
+
+  /* Set the fixed height of the footer here */
+  height: 180px; /*height: 60px;*/
+  /*background-color: #f5f5f5;*/
+}
+
+
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+/*----- Social Links -----*/
+.social-nav {
+    padding: 0;
+    list-style: none;
+    margin: -10px 0 0 -10px;
+}
+.social-nav li {
+    float: left;
+    margin: 10px 0 0 10px;
+    list-style: none;
+}
+.social-nav a {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 58px;
+    background: #000;
+    position: relative;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+
+.social-nav a {
+    overflow: hidden;
+    font-size: 26px;
+    border-radius: 4px;
+}
+.social-nav a:hover {
+    background: #fff;
+    text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4, 3px 3px #d4d4d4, 4px 4px #d4d4d4, 5px 5px #d4d4d4, 6px 6px #d4d4d4, 7px 7px #d4d4d4, 8px 8px #d4d4d4, 9px 9px #d4d4d4, 10px 10px #d4d4d4, 11px 11px #d4d4d4, 12px 12px #d4d4d4, 13px 13px #d4d4d4, 14px 14px #d4d4d4, 15px 15px #d4d4d4, 16px 16px #d4d4d4, 17px 17px #d4d4d4, 18px 18px #d4d4d4, 19px 19px #d4d4d4, 20px 20px #d4d4d4, 21px 21px #d4d4d4, 22px 22px #d4d4d4, 23px 23px #d4d4d4, 24px 24px #d4d4d4, 25px 25px #d4d4d4, 26px 26px #d4d4d4, 27px 27px #d4d4d4, 28px 28px #d4d4d4, 29px 29px #d4d4d4, 30px 30px #d4d4d4;
+}
+.social-nav .twitter {
+    background: #00ACED;
+    text-shadow: 0px 0px #0087ba, 1px 1px #0087ba, 2px 2px #0087ba, 3px 3px #0087ba, 4px 4px #0087ba, 5px 5px #0087ba, 6px 6px #0087ba, 7px 7px #0087ba, 8px 8px #0087ba, 9px 9px #0087ba, 10px 10px #0087ba, 11px 11px #0087ba, 12px 12px #0087ba, 13px 13px #0087ba, 14px 14px #0087ba, 15px 15px #0087ba, 16px 16px #0087ba, 17px 17px #0087ba, 18px 18px #0087ba, 19px 19px #0087ba, 20px 20px #0087ba, 21px 21px #0087ba, 22px 22px #0087ba, 23px 23px #0087ba, 24px 24px #0087ba, 25px 25px #0087ba, 26px 26px #0087ba, 27px 27px #0087ba, 28px 28px #0087ba, 29px 29px #0087ba, 30px 30px #0087ba;
+}
+.social-nav .twitter:hover {
+    color: #00ACED;
+}
+.social-nav .facebook {
+    background: #3B579D;
+    text-shadow: 0px 0px #2d4278, 1px 1px #2d4278, 2px 2px #2d4278, 3px 3px #2d4278, 4px 4px #2d4278, 5px 5px #2d4278, 6px 6px #2d4278, 7px 7px #2d4278, 8px 8px #2d4278, 9px 9px #2d4278, 10px 10px #2d4278, 11px 11px #2d4278, 12px 12px #2d4278, 13px 13px #2d4278, 14px 14px #2d4278, 15px 15px #2d4278, 16px 16px #2d4278, 17px 17px #2d4278, 18px 18px #2d4278, 19px 19px #2d4278, 20px 20px #2d4278, 21px 21px #2d4278, 22px 22px #2d4278, 23px 23px #2d4278, 24px 24px #2d4278, 25px 25px #2d4278, 26px 26px #2d4278, 27px 27px #2d4278, 28px 28px #2d4278, 29px 29px #2d4278, 30px 30px #2d4278;
+}
+.social-nav .facebook:hover {
+    color: #3B579D;
+}
+.social-nav .google {
+    background: #DD4A3A;
+    text-shadow: 0px 0px #c23122, 1px 1px #c23122, 2px 2px #c23122, 3px 3px #c23122, 4px 4px #c23122, 5px 5px #c23122, 6px 6px #c23122, 7px 7px #c23122, 8px 8px #c23122, 9px 9px #c23122, 10px 10px #c23122, 11px 11px #c23122, 12px 12px #c23122, 13px 13px #c23122, 14px 14px #c23122, 15px 15px #c23122, 16px 16px #c23122, 17px 17px #c23122, 18px 18px #c23122, 19px 19px #c23122, 20px 20px #c23122, 21px 21px #c23122, 22px 22px #c23122, 23px 23px #c23122, 24px 24px #c23122, 25px 25px #c23122, 26px 26px #c23122, 27px 27px #c23122, 28px 28px #c23122, 29px 29px #c23122, 30px 30px #c23122;
+}
+.social-nav .google:hover {
+    color: #DD4A3A;
+}
+.social-nav .linkedin {
+    background: #007BB6;
+    text-shadow: 0px 0px #005983, 1px 1px #005983, 2px 2px #005983, 3px 3px #005983, 4px 4px #005983, 5px 5px #005983, 6px 6px #005983, 7px 7px #005983, 8px 8px #005983, 9px 9px #005983, 10px 10px #005983, 11px 11px #005983, 12px 12px #005983, 13px 13px #005983, 14px 14px #005983, 15px 15px #005983, 16px 16px #005983, 17px 17px #005983, 18px 18px #005983, 19px 19px #005983, 20px 20px #005983, 21px 21px #005983, 22px 22px #005983, 23px 23px #005983, 24px 24px #005983, 25px 25px #005983, 26px 26px #005983, 27px 27px #005983, 28px 28px #005983, 29px 29px #005983, 30px 30px #005983;
+}
+.social-nav .linkedin:hover {
+    color: #007BB6;
+}
+
+.fa-twitter{
+	margin-top: 10px !important;
+}
+
+.fa-facebook{
+	margin-top: 10px !important;
+}
+
+.fa-google-plus{
+	margin-top: 10px !important;
+}
+
+.fa-linkedin{
+	margin-top: 10px !important;
+}
+
+
+#very-top .search-container {
+  float: right;
+	height: 25px;
+	
+}
+
+#very-top input[type=text] {
+  padding: 3px;
+  margin-top: 8px;
+  font-size: 14px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#very-top .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #ddd;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+

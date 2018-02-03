@@ -1,0 +1,383 @@
+<!--- https://bootsnipp.com/snippets/featured/navbar-lateral-slide-menu --->
+<!--  https://bootsnipp.com/snippets/4nQPR  -->
+<!--  https://bootsnipp.com/snippets/m0q1y  -->
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+	<title>GENES JEANS - Men's and Women's Clothing, Shoes, and Accessories</title>
+	<meta name="description" content="Shop Genes Jeans, Gene Lee's mock online clothing store">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">    
+	<style>
+    body {
+          padding-top: 140px !important;
+          position: relative;
+		  font-family: 'Muli', sans-serif;
+      }
+	  
+	  #collapse-button{
+		background-color: #333;
+		padding-bottom: 20px;
+		margin-left: 5px;
+
+	  }
+	  
+      
+      pre {
+          tab-size: 8;
+      }
+	  
+	  .navbar{
+		background-color: white;
+		color: black;
+		
+	  }
+	  
+	  .navbar-inverse{
+	  background-color: white;
+		color: black;
+		font-size: 18px;
+
+	  }
+	  
+	  .navbar-inverse .navbar-nav>li>a {
+			color: #333;
+
+		}
+		
+		.navbar-inverse .navbar-nav>li>a:hover {
+			color: rgba(51,51,51, 0.7);
+		}
+		
+				
+		.navbar-inverse .navbar-nav>li>a:active {
+			color: rgba(51,51,51, 0.7);
+		}
+		
+				.navbar-inverse .navbar-nav>li>a:focus {
+			color: rgba(51,51,51, 0.7);
+		}
+	  
+	  .navbar-collapse{
+	  margin-left: 40%;
+	  }
+      
+      @media screen and (max-width: 768px) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+		  margin-top: 19px;
+              top:134px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse.in {
+              width:0;
+          }
+		  
+		  	.navbar-collapse{
+				margin-left: 30%;
+			  }
+		  
+      }
+	  
+	  @media screen and (max-width: 600px) {
+			#very-top{
+				height: 45px;
+				
+			}
+	  
+		  #very-top .search-container {
+			float: none;
+			margin: auto;
+			height: 27px;
+		  }
+		  #very-top a, #very-top input[type=text] {
+			float: left;
+			text-align: left;
+			width: 70%;
+			padding: 4px;
+			height: 27px;
+			
+		  }
+		  
+		  #very-top .search-container button {
+			float: none;
+			height: 27px;
+			padding: 4px;
+
+
+		  }
+		  
+		  #very-top input[type=text] {
+			border: 1px solid #ccc;  
+		  }
+		  
+		  #salee{
+				width: 100%;
+				height: 80vh;
+				
+		  }
+		}
+    </style>
+</head>
+	<body>
+
+<header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+			<div id="free-shipping">
+				<p class="text-center">FREE SHIPPING ON ORDERS OVER $50 <a href="#">DETAILS</a></p>
+			</div>
+			<div id="very-top">
+				<div class="container">
+						<span class="pull-right" id="shopping-cart"><a href="#" title="Cart"><i class="fa fa-shopping-cart fa-lg" style="color: white;"></i></a></span>
+
+						  <div class="search-container">
+							<form  >
+							  <input type="text" placeholder="Search" name="search">
+							  <button type="submit"><i class="fa fa-search"></i></button>
+							</form>
+						  </div>
+				</div>
+			</div>
+
+      <div class="container">
+        <div class="navbar-header">
+          <button id="collapse-button" data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+
+			<span><h1>GENES JEANS</h1></span>
+
+        </div>
+        <div class="navbar-inverse side-collapse in">
+          <nav role="navigation" class="navbar-collapse" >
+            <ul class="nav navbar-nav">
+              <li><a href="#Home">New</a></li>
+              <li><a href="#users">Women</a></li>
+              <li><a href="#">Men</a></li>
+			  <li><a href="#">Kids</a></li>
+			  <li><a href="#">Jeans</a></li>
+			  <li><a href="#">Accessories</a></li>
+			  <li><a href="#">Clearance</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container side-collapse-container">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+		</br>
+		<div id="first-slider">
+			<div id="carousel-example-generic" class="carousel slide carousel-fade">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<!-- Item 1 -->
+					<div class="item active slide1">
+						<div class="row"><div class="container">
+							<div class="col-md-9 text-right">
+								<h2 data-animation="animated bounceInDown">The Winter Sale is here!</h2>
+								<h3 data-animation="animated bounceInUp">Up to 50% Off!</h3> 
+								<div>
+									<span><button class="transparent_btn btn-lg">WOMEN'S SALE</button></span>
+									<span><button class="transparent_btn btn-lg">MEN'S SALE</button></span>
+								</div>
+							 </div>
+
+						</div></div>
+					 </div> 
+					<!-- Item 3 -->
+					<div class="item slide3">
+						<div class="row"><div class="container">
+							<div class="col-md-6">
+							</div>
+							<div class="col-md-6 text-right" style="margin-top: 100px; margin-right: 100px;">
+									<h2>CHILDREN'S SALE</h2>
+									<span><button class="transparent_btn btn-lg">SHOP NOW</button></span>
+							</div>     
+						</div></div>
+					</div>
+					<!-- Item 4 -->
+					<div class="item slide4">
+						<div class="row"><div class="container">
+							<div class="col-md-6 text-left" style="margin-left: 100px;">
+								<h2>NEW ARRIVALS</h2>
+								<span><button class="transparent_btn btn-lg">SHOP NOW</button></span>
+							 </div>
+							 <div class="col-md-6">
+							 </div>
+						</div></div>
+					</div>
+					<!-- End Item 4 -->
+			
+				</div>
+				<!-- End Wrapper for slides-->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	
+	
+      <div class="row" style="margin-top: 32px;">
+        <div class="col-md-6">
+			<a href="#"><img class="img-responsive" src="girl-1.jpg" height="1280" width="853"></a>
+		</div>
+		<div class="col-md-6">
+			<a href="#"><img class="img-responsive" src="girl-2.jpg" height="1280" width="853"></a>
+		</div>
+      </div>
+	  
+	  <div class="row" style="margin-top: 32px;">
+		<div class="col-xs-12" id="salee">
+			<p class="text-center" style="font-size: 10vh; color: #333; font-weight: 700; margin-top: 120px;">EXTRA 75% OFF</p>
+			<p class="text-center" style="font-size: 10vh; color: red; font-weight: 700; margin-top: 35px;">ALL SALE ITEMS</p>
+			<span><button class="transparent_btn btn-lg center-block">SHOP SALE</button></span>
+
+		</div>
+	  </div>
+	  
+	  
+	
+	  
+	  
+	  <footer class="footer">
+    <div class="container">
+        <div class="row">
+    		<div class="col-md-12">
+    			<div class="col-md-3" >
+    				<ul class="list-unstyled">
+    					<li>Customer Service<li>
+    					<li><a href="#">Shipping</a></li>
+    					<li><a href="#">Returns</a></li>
+    					<li><a href="#">Track Your Order</a></li>
+    					<li><a href="#">Contact & support</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-3" >
+    				<ul class="list-unstyled">
+    					<li>About Us<li>
+    					<li><a href="#">Our Mission</a></li>
+    					<li><a href="#">Careers</a></li>
+    					<li><a href="#">Investors</a></li>
+    					<li><a href="#">Stores</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-3" >
+    				    <h4 class="widget-title">Follow us</h4>
+						<ul class="social-nav">
+							<li><a href="#" target="_blank" title="Twitter" rel="nofollow" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" target="_blank" title="Google plus" rel="nofollow" class="google"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#" target="_blank" title="Linkedin" rel="nofollow" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+    			</div>
+				<div class="col-md-3" >
+
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-8">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+          </div>
+          <div class="col-md-4">
+            <p class="muted pull-right">© 2018 Genes Jeans. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+	  
+    </div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {   
+					var sideslider = $('[data-toggle=collapse-side]');
+					var sel = sideslider.attr('data-target');
+					var sel2 = sideslider.attr('data-target-2');
+					sideslider.click(function(event){
+						$(sel).toggleClass('in');
+						$(sel2).toggleClass('out');
+					});
+
+				});
+			</script>
+		<script>
+			(function( $ ) {
+
+				//Function to animate slider captions 
+				function doAnimations( elems ) {
+					//Cache the animationend event in a variable
+					var animEndEv = 'webkitAnimationEnd animationend';
+					
+					elems.each(function () {
+						var $this = $(this),
+							$animationType = $this.data('animation');
+						$this.addClass($animationType).one(animEndEv, function () {
+							$this.removeClass($animationType);
+						});
+					});
+				}
+				
+				//Variables on page load 
+				var $myCarousel = $('#carousel-example-generic'),
+					$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+					
+				//Initialize carousel 
+				$myCarousel.carousel();
+				
+				//Animate captions in first slide on page load 
+				doAnimations($firstAnimatingElems);
+				
+				//Pause carousel  
+				$myCarousel.carousel('pause');
+				
+				
+				//Other slides to be animated on carousel slide event 
+				$myCarousel.on('slide.bs.carousel', function (e) {
+					var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+					doAnimations($animatingElems);
+				});  
+				$('#carousel-example-generic').carousel({
+					interval:3000,
+					pause: "false"
+				});
+				
+			})(jQuery);	
+			
+
+
+		</script>
+		<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
