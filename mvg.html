@@ -2,16 +2,14 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta title="Oldage | Gene Lee">
-	<title>Man Vs God | Gene Lee</title>
+	<meta title="Man Vs God | Gene Lee">
+	<title>Man Vs God| Gene Lee</title>
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<!---<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">--->
 		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="social.css">
-		        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<style>/*
 					   Variables
 			  ********************************** */
@@ -122,11 +120,32 @@
 				font-size: 40px;
 						font-family: 'Rubik Mono One', sans-serif;
 			}
-
+			
+			@media(min-width: 320px){
+			  
+			.big-logo-row #h1 {
+				font-size: 5.5em;
+			 } 
+			.big-logo-row  p{
+				margin-top: 42px !important;
+			}
+			  
+			  	.tz-gallery {
+					padding: 20px;
+				}
+			
+			}
+			
+			
 			@media (min-width: 375px) {
 			#about-row p{
 				font-size: 24px;
 			  }
+			
+			.tz-gallery {
+					padding: 20px;
+				}	
+			
 			.big-logo-row #h1 {
 				font-size: 5.5em;
 			 } 
@@ -163,27 +182,31 @@
 				font-size: 9em;
 				padding-bottom: 30px;
 			  }
-			  
-			  #game-row{
-				margin-top: 5%;
-			  }
-			  
+			  .tz-gallery {
+					padding: 40px;
+				}
+			
 			.big-logo-row .big-logo-container{
 				margin-bottom: 150px;
 			  }
 			  
-				.big-logo-row  p{
+			.big-logo-row  p{
 				margin-top: 12px !important;
-				}
+			}
+			 #game-row{
+				margin-top: 5%;
+			  }
+
 			  
 			}
 			@media (min-width: 1200px) {
 			  .big-logo-row #h1 {
 				font-size: 11em;
 			  }
-				#game-row{
+			  	#game-row{
 					margin-top: 0px;
 				}
+			 
 			}
 
 			
@@ -210,8 +233,8 @@
           
           <ul class="nav navbar-nav navbar-right">
 		  	<li><a href="/index.html">Home</a></li>
-            <li><a href="/portfolio.html">Portfolio</a></li>
-			<li><a href="/contact.html">Contact me</a></li>
+            <li class="active"><a href="#">Portfolio</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -227,16 +250,18 @@
         </div><!--/.row -->
       </div><!--/.container -->
     </div><!--/.container-fluid -->
-	
+
 	<div class="container" id="game-row">
 	<div class="row" style="margin-top: 28px;">
 		<div class="col-md-12">
-			<div class="col-md-6">
 				<p><img class="img-responsive center-block" src="images/mvg-2.png" alt="man vs god"></p>
+			<div class="col-md-offset-3 col-md-6">
+				 <p class="center-block img-responsive text-center" style="color: #333; font-size: 24px;">
+					Man Vs God is a RTS and VR hybrid game. I am currently working on this as a programmer and designer.
+				 </p>
 			</div>
-			<div class="col-md-6">
-				 <p class="center-block img-responsive text-center" style="color: #333; font-size: 24px;">Man Vs God is a RTS and VR hybrid game. I am currently working on this as a programmer and designer.</p>
-			</div>
+
+
 		</div>
     </div>
 	</div>
@@ -298,6 +323,3 @@ $(window).scroll(function() {
 
 
 </html>
-    
-
-

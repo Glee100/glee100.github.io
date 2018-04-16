@@ -2,25 +2,21 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta title="Dulles Glass and Mirror | Gene Lee">
+	<meta title="Portfolio Website | Gene Lee">
 	<title>Portfolio Website | Gene Lee</title>
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<!---<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">--->
 		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="social.css">
-		        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<style>/*
 					   Variables
 			  ********************************** */
 			/* *********************************
 			   Some Style Overrides on Bootstrap
 			  ********************************** */
-			body{
-				background-color: none;
-			}
+		
 
 			.navbar-inverse {
 			  /*background: rgba(62, 195, 246, 0);*/
@@ -124,12 +120,32 @@
 				font-size: 40px;
 						font-family: 'Rubik Mono One', sans-serif;
 			}
-
+			
+			@media(min-width: 320px){
+			  
+			.big-logo-row #h1 {
+				font-size: 5.5em;
+			 } 
+			.big-logo-row  p{
+				margin-top: 42px !important;
+			}
+			  
+			  	.tz-gallery {
+					padding: 20px;
+				}
+			
+			}
+			
+			
 			@media (min-width: 375px) {
 			#about-row p{
 				font-size: 24px;
 			  }
-			  
+			
+			.tz-gallery {
+					padding: 20px;
+				}	
+			
 			.big-logo-row #h1 {
 				font-size: 5.5em;
 			 } 
@@ -166,18 +182,30 @@
 				font-size: 9em;
 				padding-bottom: 30px;
 			  }
-			 .big-logo-row .big-logo-container{
+			  .tz-gallery {
+					padding: 40px;
+				}
+			
+			.big-logo-row .big-logo-container{
 				margin-bottom: 150px;
-			  } 
-			  			.big-logo-row  p{
+			  }
+			  
+			.big-logo-row  p{
 				margin-top: 12px !important;
 			}
+			 #game-row{
+				margin-top: 5%;
+			  }
+
 			  
 			}
 			@media (min-width: 1200px) {
 			  .big-logo-row #h1 {
 				font-size: 11em;
 			  }
+			  	#game-row{
+					margin-top: 0px;
+				}
 			 
 			}
 
@@ -205,8 +233,8 @@
           
           <ul class="nav navbar-nav navbar-right">
 		  	<li><a href="/index.html">Home</a></li>
-            <li><a href="/portfolio.html">Portfolio</a></li>
-			<li><a href="/contact.html">Contact me</a></li>
+            <li class="active"><a href="#">Portfolio</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -218,26 +246,26 @@
           <div class="col-xs-12 big-logo-container">
             <div id="h1" class="big-logo font-effect-3d-float">Gene Lee</div>
 			<p style="color: #B20000; font-family: 'Rubik Mono One', sans-serif; font-size: 20px;">SOFTWARE & GAME DEVELOPER</p>
-			<p class="text-center"><i class="fa-5x fa fa-angle-down" style="color: black; margin-top: 30vh;" aria-hidden="true"></i></p>
           </div><!--/.col-xs-12 -->
         </div><!--/.row -->
       </div><!--/.container -->
     </div><!--/.container-fluid -->
-	
+
+	<div class="container" id="game-row">
 	<div class="row" style="margin-top: 28px;">
 		<div class="col-md-12">
-			<div class="col-md-12">
 				<p><a href="https://ronmakhouli.com" target="_blank"><img class="img-responsive center-block" src="rm.PNG" alt="genes mock website"></a></p>
-			</div>
 			<div class="col-md-offset-3 col-md-6">
 				 <p class="center-block img-responsive text-center" style="color: #333; font-size: 24px;">
 					A mobile responsive portfolio website made with HTML, CSS, bootstrap, and javascript.
 					Click on the image above to visit the webpage.
 				 </p>
 			</div>
+
+
 		</div>
     </div>
-	
+	</div>
 	
     <div class=" col-xs-12 afooter">
       <div class="fa-container">
@@ -296,6 +324,3 @@ $(window).scroll(function() {
 
 
 </html>
-    
-
-	
