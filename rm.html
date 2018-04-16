@@ -2,16 +2,14 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my online portfolio for some of my web development and game design projects">
-	<meta title="Portfolio | Gene Lee">
-	<title>Portfolio | Gene Lee</title>
+	<meta title="Dulles Glass and Mirror | Gene Lee">
+	<title>Portfolio Website | Gene Lee</title>
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<!---<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">--->
 		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="social.css">
-        <link rel="stylesheet" href="fluid-gallery.css">
 		        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 		<style>/*
@@ -20,7 +18,9 @@
 			/* *********************************
 			   Some Style Overrides on Bootstrap
 			  ********************************** */
-		
+			body{
+				background-color: none;
+			}
 
 			.navbar-inverse {
 			  /*background: rgba(62, 195, 246, 0);*/
@@ -124,32 +124,12 @@
 				font-size: 40px;
 						font-family: 'Rubik Mono One', sans-serif;
 			}
-			
-			@media(min-width: 320px){
-			  
-			.big-logo-row #h1 {
-				font-size: 5.5em;
-			 } 
-			.big-logo-row  p{
-				margin-top: 42px !important;
-			}
-			  
-			  	.tz-gallery {
-					padding: 20px;
-				}
-			
-			}
-			
-			
+
 			@media (min-width: 375px) {
 			#about-row p{
 				font-size: 24px;
 			  }
-			
-			.tz-gallery {
-					padding: 20px;
-				}	
-			
+			  
 			.big-logo-row #h1 {
 				font-size: 5.5em;
 			 } 
@@ -186,18 +166,12 @@
 				font-size: 9em;
 				padding-bottom: 30px;
 			  }
-			  .tz-gallery {
-					padding: 40px;
-				}
-			
-			.big-logo-row .big-logo-container{
+			 .big-logo-row .big-logo-container{
 				margin-bottom: 150px;
-			  }
-			  
-			.big-logo-row  p{
+			  } 
+			  			.big-logo-row  p{
 				margin-top: 12px !important;
 			}
-
 			  
 			}
 			@media (min-width: 1200px) {
@@ -231,8 +205,8 @@
           
           <ul class="nav navbar-nav navbar-right">
 		  	<li><a href="/index.html">Home</a></li>
-            <li class="active"><a href="#">Portfolio</a></li>
-            <li><a href="/contact.html">Contact me</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+			<li><a href="/contact.html">Contact me</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -249,44 +223,22 @@
         </div><!--/.row -->
       </div><!--/.container -->
     </div><!--/.container-fluid -->
-
-	<div class="gallery-container">
 	
-
-
-	    <div class="tz-gallery">
-
-        <div class="row">
-
-            <div class="col-sm-12 col-md-4">
-                <a class="lightbox" href="/mvg.html">
-                    <img src="mvg.png" alt="Man vs God">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="/dgm.html">
-                    <img src="DGM2.png" alt="dulles glass and mirror">
-                </a>
-            </div>
-			<div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="/rm.html">
-                    <img src="rm.png" alt="portfolio site">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="/oldage.html">
-                    <img src="oldage-gene.png" alt="oldage game project">
-                </a>
-            </div>
-			<div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="genesjeans.html">
-                    <img src="images/genes-jeans.PNG" alt="gene's mock clothing site project">
-                </a>
-            </div>
-        </div>
-
+	<div class="row" style="margin-top: 28px;">
+		<div class="col-md-12">
+			<div class="col-md-12">
+				<p><a href="https://ronmakhouli.com" target="_blank"><img class="img-responsive center-block" src="rm.png" alt="genes mock website"></a></p>
+			</div>
+			<div class="col-md-offset-3 col-md-6">
+				 <p class="center-block img-responsive text-center" style="color: #333; font-size: 24px;">
+					A portfolio website made with HTML, CSS, bootstrap, and javascript.
+					Click on the image above to visit the webpage.
+				 </p>
+			</div>
+		</div>
     </div>
-</div>
+	
+	
     <div class=" col-xs-12 afooter">
       <div class="fa-container">
               <a href='#'><i class="fa fa-envelope fa-3x fa-fw"></i></a>
@@ -296,11 +248,6 @@
             <section style="margin-top: 15px;">© 2017 Gene Lee</section>
       </div>
     </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -349,3 +296,6 @@ $(window).scroll(function() {
 
 
 </html>
+    
+
+	
