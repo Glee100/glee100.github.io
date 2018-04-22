@@ -1,18 +1,15 @@
-<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta title="Software and Game Developer | Gene Lee">
 	<title>About | Gene Lee</title>
 	<meta name="description" content="Gene Lee is a game designer and web developer student from Virginia. This is my portfolio showcasing my game development and web development work.">
 	<meta name="keywords" content="game design, GMU portfolio, gmu student portfolio, game design student, game design portfolio, gene lee, gene lee gmu, gmu game design, gmu game student, DC game design">
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
@@ -243,46 +240,43 @@
     </footer>
 </div>
 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 <script
   src="https://code.jquery.com/jquery-1.11.0.min.js"
   integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
-  crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+  crossorigin="anonymous"></script>
 <script type="text/javascript">
 
 	$(document).ready(function(){
 		
-		  $('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			  var target = $(this.hash);
-			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			  if (target.length) {
-				$('html,body').animate({
-				  scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			  }
-			}
-		  });
-		  
-		$('#projects > li').hover(function(){
-		  $(this).siblings().addClass('blur');
-		}, function(){
-		  $(this).removeClass('clicked').siblings().removeClass('blur');
-		  
-		});
-
-		$('#projects > li').click(function(e){
-		  $(this).addClass('clicked');
-		});
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
 	  
+
+    $('#projects > li').hover(function(){
+	  $(this).siblings().addClass('blur');
+	}, function(){
+	  $(this).removeClass('clicked').siblings().removeClass('blur');
 	  
 	});
-</script>
 
+	$('#projects > li').click(function(e){
+	  $(this).addClass('clicked');
+	});
+});
+
+</script>
 
 </body>
 </html>
