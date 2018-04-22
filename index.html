@@ -7,559 +7,283 @@
 	<title>About | Gene Lee</title>
 	<meta name="description" content="Gene Lee is a game designer and web developer student from Virginia. This is my portfolio showcasing my game development and web development work.">
 	<meta name="keywords" content="game design, GMU portfolio, gmu student portfolio, game design student, game design portfolio, gene lee, gene lee gmu, gmu game design, gmu game student, DC game design">
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<!---<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">--->
-		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="social.css">
-        <link rel="stylesheet" href="gallery-clean.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-		<style>/*
-					   Variables
-			  ********************************** */
-			/* *********************************
-			   Some Style Overrides on Bootstrap
-			  ********************************** */
-		
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
 
-			.navbar-inverse {
-			  /*background: rgba(62, 195, 246, 0);*/
-			  background: rgba(232,203,192,0);
-			  border-bottom: none;
-			  border-color: transparent;
-			}
-
-			.navbar-inverse .navbar-toggle {
-			  border: 1px solid #333;
-			  /*border-color: rgba(255, 255, 255, 0.7);*/
-			}
-
-			.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-			  border-color: transparent;
-			}
-			@media (max-width: 767px) {
-			  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-				background: rgba(255, 255, 255, 0.75);
-			  }
-			}
-
-			.navbar-inverse .navbar-nav > li > a {
-			  color: #333;
-			}
-
-			.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-			  color: #22F;
-			}
-			li a {
-				font-size: 18px;
-			  text-decoration: none;
-			  position: relative;
-			  padding: 6px 0;
-			  -webkit-transition: all 0.8s;
-			  transition: all 0.8s;
-			  color: lightblue;
-			}
-			li a:after {
-			  content: '';
-			  width: 0%;
-			  margin-left: 50%;
-			  height: 2px;
-			  bottom: 0;
-			  left: 0;
-			  border-radius: 40%;
-			  position: absolute;
-			  transition: all 0.5s;
-			}
-			li a:hover:after {
-			  background-color: white;
-			  width: 60%;
-			  margin-left: 20%;
-			  box-shadow: 0px 0px 10px white;
-			}
-			li a.active:after {
-			  background-color: white;
-			  width: 60%;
-			  margin-left: 20%;
-			  box-shadow: 0px 0px 10px white;
-			}
-
-			/* *********************************
-					   Toolbar Logo
-			  ********************************** */
-			.small-logo-container {
-			  padding-top: 50px;
-			  			  padding-left: 10px;
-			  height: 50px;
-			  overflow: hidden;
-			  position: absolute;
-			}
-
-			.small-logo {
-			#font-family: 'Nosifer', cursive;
-			font-family: 'Rubik Mono One', sans-serif;
-			  #color: white;
-			  color: #333;
-			  /*font-size: 2.5em;*/
-			  font-size: 34px;
-			  padding-bottom: 2px;
-			}
-
-			/* *********************************
-					   Big Logo
-			  ********************************** */
-			.big-logo-row {
-			  #background: #DCDCDC;
-			  #background: #FEAC5E; /* For browsers that do not support gradients */
-			  #background: -webkit-linear-gradient(left top, #FEAC5E, #C779D0, #4BC0C8); /* For Safari 5.1 to 6.0 */
-			  #background: -o-linear-gradient(bottom right, #FEAC5E, #C779D0, #4BC0C8); /* For Opera 11.1 to 12.0 */
-			  #background: -moz-linear-gradient(bottom right, #FEAC5E, #C779D0, #4BC0C8); /* For Firefox 3.6 to 15 */
-			  #background: linear-gradient(to bottom right, #FEAC5E, #C779D0, #4BC0C8); /* Standard syntax */
-			      background: #ECE9E6; /* For browsers that do not support gradients */
-				background: -webkit-linear-gradient(#ECE9E6, #FFFFFF);
-				background: -o-linear-gradient(#ECE9E6, #FFFFFF); 
-				background: -moz-linear-gradient(#ECE9E6, #FFFFFF); 
-				background: linear-gradient(#ECE9E6, #FFFFFF);
-			}
-			.big-logo-row .big-logo-container {
-			  padding-top: 50px;
-			  height: 97vh;
-			}
-			.big-logo-row #h1 {
-			color: #333;
-			  font-size: 4em;
-			  #margin: 0;
-			  margin-top: 15%;
-			  #padding: 0 0 15px 0;
-				font-size: 74px;
-			#font-family: 'Nosifer', cursive;
-			font-family: 'Rubik Mono One', sans-serif;
-			
-			}
-			
-			@media(min-width: 320px){
-			#about-row p{
-				font-size: 20px;
-			  }
-			  
-			.big-logo-row #h1 {
-				font-size: 5.5em;
-			 } 
-			.big-logo-row  p{
-				margin-top: 42px !important;
-			}
-			  
-			 .middle{
-				left: 50%;
-			  }
-			  
-			 .fa-angle-down{
-				margin-top: 10vh;
-			 }
-			
-			}
-			
-			
-			@media (min-width: 375px) {
-			#about-row p{
-				font-size: 24px;
-			  }
-			  
-			.big-logo-row #h1 {
-				font-size: 5.5em;
-			 } 
-			.big-logo-row  p{
-				margin-top: 42px !important;
-			}
-			  
-			 .middle{
-				left: 50%;
-			  }
-			  
-			 .fa-angle-down{
-				margin-top: 20vh;
-			 }
-			
-			}
-			
-			@media (min-width: 400px) {
-			  .big-logo-row #h1 {
-				font-size: 4.5em;
-			  }
-			  
-			  #about-row p{
-				font-size: 24px;
-			  }
-			  
-			  .middle{
-				left: 50%;
-			  }
-			  
-			  fa-angle-down{ margin-top: 20vh;}	
-			   
-			}
-			@media (min-width: 440px) {
-			  .big-logo-row #h1 {
-				font-size: 5.5em;
-			  }
-			  
-			  #about-row p{
-				font-size: 24px;
-			  }
-			  
-			  .middle{
-				left: 50%;
-			  }
-			  
-			  fa-angle-down{ margin-top: 20vh;}	
-			  
-			}
-			@media (min-width: 500px) {
-			  .big-logo-row #h1 {
-				font-size: 6.5em;
-			  }
-			  .middle{
-				left: 50%;
-			  }
-			  
-			  #about-row p{
-				font-size: 24px;
-			  }
-			  
-			  fa-angle-down{ margin-top: 20vh;}	
-			}
-			@media (min-width: 630px) {
-			  .big-logo-row #h1 {
-				font-size: 7.5em;
-			  }
-			  
-			  .middle{
-				left: 40%;
-			  }
-			  
-			  #about-row p{
-				font-size: 24px;
-			  }
-			  
-			  fa-angle-down{ margin-top: 30vh;}	
-			}
-			@media (min-width: 768px) {
-			  .big-logo-row #h1 {
-				font-size: 9em;
-				padding-bottom: 30px;
-			  }
-			 fa-angle-down{ margin-top: 30vh;}	
-				
-			#about-row p{
-				margin-top: auto;
-				font-size: 28px;
-			  }
-			  
-				.middle{
-					#left: 40%;
-					left: 55%;
-				}
-			  
-			}
-			
-			@media (min-width: 900px){
-				.middle{
-					left: 35%;
-				}
-			}
-			
-			@media (min-width: 1200px) {
-			  .big-logo-row #h1 {
-				font-size: 11em;
-			  }
-			  
-			  #about-row p{
-				margin-top: 50%;
-			  }
-			  
-			  .middle{
-			  left: 30%;
-			  }
-			  
-			  fa-angle-down{ margin-top: 30vh;}	
-			  
-			}
-			
-			#sk-img img{
-				position: relative;
-				float: left;
-				width:  150px;
-				height: 150px;
-				background-position: 50% 50%;
-				background-repeat:   no-repeat;
-				background-size:     cover;
-			}
-
-			#sk-img{
-				margin-top: 20px;
-				margin-bottom: 25px;
-			}
-			
-			#skills-img-column{
-				#width: 50%;
-				margin: auto;
-				padding-top: 5px;
-			}
-
-			#skills-img-column div{
-				width: 300px;
-				height: 300px;
-				padding: 5px;
-				margin-bottom: -25px;
-			}
-
-			#new-skills{
-				text-align: center;
-					margin-top: 200px;
-					padding-bottom: 30px;
-					padding-top: 15px;
-					height: 95vh;
-			}
-			
-			
-				/* container hover */
-
-				.image {
-				  opacity: 1;
-				  display: block;
-				  width: 100%;
-				  height: auto;
-				  transition: .5s ease;
-				  backface-visibility: hidden;
-				}
-				.middle {
-				  transition: .5s ease;
-				  opacity: 0;
-				  position: absolute;
-				  top: 50%;
-
-				  transform: translate(-50%, -50%);
-				  -ms-transform: translate(-50%, -50%)
-				}
-
-				.contains:hover .image {
-				  opacity: 0.4;
-				}
-
-				.contains:hover .middle {
-				  opacity: 1;
-				}
-
-				.text {
-				  background-color: #FD8B77;
-				  color: white;
-				  font-size: 16px;
-				  padding: 16px 32px;
-				}
-			
-		</style>   
-  
 </head>
 
-<body id="grad">
-	   <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="small-logo-container">
-            <a class="small-logo" href="#">Gene Lee</a>
-          </div>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">Gene Lee</a>
         </div>
-        <div class="navbar-collapse collapse">
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-			<li><a href="/portfolio.html">Portfolio</a></li>
-            <li><a href="/contact.html">Contact me</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-
-    <div class="container-fluid big-logo-row">
-      <div class="container">
+    <!-- /.container-fluid -->
+</nav>
+<header id="page-top">
+    <div class="container">
         <div class="row">
-          <div class="col-xs-12 big-logo-container">
-            <div id="h1" class="big-logo font-effect-3d-float">Gene Lee</div>
-			<p style="color: #B20000; font-family: 'Rubik Mono One', sans-serif; font-size: 20px;">SOFTWARE & GAME DEVELOPER</p>
-			<p class="text-center"><i class="fa-5x fa fa-angle-down" style="color: black;" aria-hidden="true"></i></p>
-          </div><!--/.col-xs-12 -->
-        </div><!--/.row -->
-      </div><!--/.container -->
-    </div><!--/.container-fluid -->
-<div class="container-fluid" id="about-row">
-    <div class="container" >
-      <div class="row" style="margin-top: 100px;">
-        <div class="col-xs-12 col-md-6">
-			<br/>
-			<p>
-			Hi, I'm Gene Lee.<br/> I'm a <span style="color: #B20000;">front-end developer</span> and <span style="color: #B20000;">game designer</span>
-			student at George Mason University.<br/> I am currently learning to be a <span style="color: #d5a95a;"><strong>full-stack</strong></span> developer.
-			I can program in java, c#, and python, as well as do 3d art and design in Unity.<br/>
-			I have a special interest for developing for Virtual and Augmented Reality
-			</p>
+            <div class="col-lg-12">
+                <img class="img-responsive" src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+                <div class="intro-text">
+				    <span class="name font-effect-3d-float">Gene Lee</span>
+                    <hr class="star-light">
+                    <p class="skills">Web Developer</p>
+                    <p class="skills">Game Designer</p>
+                </div>
+            </div>
         </div>
-		<div class="col-xs-12 col-md-6">
-			<br/>
-			<p>I have worked on multiple games and commercial websites.<br/>
-			You can check out my <a href="/portfolio.html" style="color: #B20000; text-decoration:none;">portfolio</span> <a style="color: #333; text-decoration: none;" href="/portfolio.html">here</a>
-            <br/>Take a look at my <a href='Resume%20Gene%20Lee.pdf' target="_blank" style="color: #d5a95a; text-decoration:none;"><strong>resume</strong></span> <a style="color: #333; text-decoration: none;" href='Resume%20Gene%20Lee.pdf' target="_blank">here</a>
-        </div>
-</div>
-      </div><!--/.row -->
-    </div><!--/.container -->
-
-	<div id="new-skills">
-					<div class="container-fluid col-md-8 col-md-offset-2 col-sm-offset-1">
-									
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="3dsMax.png">
-												<div class="middle">
-													<div class="text">Autodesk 3DS Max</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="CSS3.png">
-												<div class="middle">
-													<div class="text">CSS3</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="html5.png">
-												<div class="middle">
-													<div class="text">HTML5</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="java.png">
-												<div class="middle">
-													<div class="text">Java</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="javascript.png">
-												<div class="middle">
-													<div class="text">Javascript</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="maya_logo.png">
-												<div class="middle">
-													<div class="text">Autodesk Maya</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="unity.png">
-												<div class="middle">
-													<div class="text">Unity3D</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="motionbuilder.png">
-												<div class="middle">
-													<div class="text">Autodesk Motionbuilder</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="unrealengine.png">
-												<div class="middle">
-													<div class="text">Unreal Engine</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="visualstudio.png">
-												<div class="middle">
-													<div class="text">Visual Studio</div>
-												</div>
-						</div>
-						<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="c.png">
-												<div class="middle">
-													<div class="text">C#</div>
-												</div>
-						</div>
-										<div id="sk-img" class="contains col-xs-6 col-sm-4 col-md-3">
-							<img class="image" src="vive.png">
-												<div class="middle">
-													<div class="text">HTC Vive Steam VR</div>
-												</div>
-						</div>
-					</div>    
-		</div>
-
-
-    <div class=" col-xs-12 afooter">
-      <div class="fa-container">
-              <a href='#'><i class="fa fa-envelope fa-3x fa-fw"></i></a>
-              <a href='Resume%20Gene%20Lee.pdf' target="_blank"><i class="fa fa-file-pdf-o fa-3x fa-fw"></i></a>
-              <a href='https://github.com/Glee100'><i class="fa fa-git fa-3x fa-fw"></i></a>
-              <a href='https://www.linkedin.com/in/gene-lee-478433100/'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
-            <section style="margin-top: 15px;">© 2017 Gene Lee</section>
-      </div>
     </div>
+</header>
+<div class="content-wrapper">
+
+	<section>
+	<div class="container">
+	        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 style="color: #777;">Skills</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="skill-block">
+							<div class="sk-border">
+								<span><i class="skill-icon fa fa-columns"></i></span>
+							</div>
+							<div class="sk-text">
+								<h4>Front end</h4>
+								<p>HTML</p>
+								<p>CSS</p>
+								<p>Bootstrap</p>
+								<p>Javascript</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="skill-block">
+							<div class="sk-border">
+								<span><i class="skill-icon fa fa-code"></i></span>
+							</div>
+							<div class="sk-text">
+								<h4>Programming</h4>
+								<p>Java</p>
+								<p>Python</p>
+								<p>C#</p>
+								<p>SQL</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="skill-block">
+							<div class="sk-border">
+								<span><i class="skill-icon fa fa-camera-retro"></i></span>
+							</div>
+
+							<div class="sk-text">
+								<h4>Design</h4>
+								<p>Website</p>
+								<p>UI/UX</p>
+								<p>Game Design</p>
+								<p>CMS</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="skill-block">
+							<div class="sk-border">
+								<span><i class="skill-icon fa fa-gamepad"></i></span>
+							</div>
+
+							<div class="sk-text">
+								<h4>Game Dev</h4>
+								<p>Unity 3d</p>
+								<p>Unreal Engine</p>
+								<p>Maya/3DS Max</p>
+								<p>Steam VR</p>	
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	</section>
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>I'm a front-end developer and game designer student at George Mason University.
+						I am currently learning to be a full-stack developer. I can program in java, c#, and python, as well as do 3d art and design in Unity.
+						I have a special interest for developing for Virtual and Augmented Reality
+					</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>I have worked on multiple games and commercial websites.
+            <br/>Take a look at my <a href='Resume%20Gene%20Lee.pdf' target="_blank" style="color: #d5a95a; text-decoration:none;"><strong>resume</strong></span> <a style="color: #fff; text-decoration: none;" href='Resume%20Gene%20Lee.pdf' target="_blank">here</a>
+					</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section id="portfolio">
+	    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 style="color: #777;">Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+        </div>
+		<ul id="projects">
+			<li id="p1" class="flipper">
+			  <div class="front"><img height="640" width="900" src="/mvg.png" alt="">
+			  </div>
+			  <div class="back">
+					<h2>Man Vs. God</h2>
+						</br>
+						<p>Man Vs God is a RTS and VR hybrid game. I am currently working on this as a programmer and designer.</p>
+			  </div>
+			</li>
+			<li id="p2" class="flipper">
+			  <div class="front"><img height="640" width="900"  src="/DGM2.png" alt="">
+			  </div>
+			  <div class="back">
+				  <h2>Dulles Glass & Mirror</h2>
+				  <br />
+					<p>I implemented html, css, and javascript for the ecommerce website, Dulles Glass and Mirror</p><p>
+					 Visit <a href="https://www.dullesglassandmirror.com">here</a></p>
+			  </div>
+			</li>
+			<li id="p3" class="flipper">
+			  <div class="front"><img height="640" width="900"  src="/rm.PNG" alt=""></div>
+				<div class="back">
+				  <h2>Portfolio Website</h2>
+				  </br>
+				  <p>A mobile responsive portfolio website made with HTML, CSS, bootstrap, and javascript.</p>
+				  <p>Visit <a href="https://ronmakhouli.com">here</a></p>
+				</div>
+			</li>
+			<li id="p4" class="flipper">
+			  <div class="front"><img height="640" width="900"  src="/images/genes-jeans.PNG" alt=""></div>
+				<div class="back">
+				  <h2>Genes Jeans</h2>
+				  </br>
+				  <p>Genes Jeans is a mock online clothing store home webpage I made using HTML, CSS, Bootstrap and javascript. I used royalty free images for this project.</p>
+				  	<p>Visit 
+					<a href="/project/genesmockshop.html">here</a></p>
+				</div>
+			</li>
+			<!--<li id="p4" class="flipper">
+			  <div class="front"><img height="640" width="900"  src="https://www.geneglee.com/images/genes-jeans.PNG" alt=""></div>
+				<div class="back">
+				  <h2>Dulles Glass</h2>
+				  </br>
+				  <p>I implemented html, css, and javascript for the website, Dulles Glass</p>
+				  	<p>Visit 
+					<a href="https://www.dullesglass.com">here</a></p>
+				</div>
+			</li>--->
+			
+	</ul>
+	</section>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
+    <footer class="container" style="min-height:200px; color:#fff;text-align:center;padding-top:50px;">
+        Gene Lee © 2018 
+		<div class="social-container">
+			<ul class="social-icons">
+				<li><a href="Resume%20Gene%20Lee.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></li>
+				<li><a href="https://github.com/Glee100" target="_blank"><i class="fa fa-git"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/gene-lee-478433100/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		</div>
+    </footer>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/jquery-1.11.0.min.js"
+  integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	  
+	});
+</script>
+<script type="text/javascript">
+
+
+    $('#projects > li').hover(function(){
+	  $(this).siblings().addClass('blur');
+	}, function(){
+	  $(this).removeClass('clicked').siblings().removeClass('blur');
+	  
+	});
+
+	$('#projects > li').click(function(e){
+	  $(this).addClass('clicked');
+	});
+
 </script>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-								var navbarHeight = $('.navbar').height(); 
-
-$(window).scroll(function() {
-  /*var navbarColor = "62,195,246";//color attr for rgba*/
-  var navbarColor = "236, 233, 230";  
-
-
-  var smallLogoHeight = $('.small-logo').height();
-  var bigLogoHeight = $('.big-logo').height();
-  
-  
-  var smallLogoEndPos = 0;
-  var smallSpeed = (smallLogoHeight / bigLogoHeight);
-  
-  var ySmall = ($(window).scrollTop() * smallSpeed); 
-  
-  var smallPadding = navbarHeight - ySmall;
-  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
-  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
-  if (smallPadding < 0) { smallPadding = 0; }
-  
-  $('.small-logo-container ').css({ "padding-top": smallPadding});
-  
-  var navOpacity = ySmall / smallLogoHeight; 
-  if  (navOpacity > 1) { navOpacity = 1; }
-  if (navOpacity < 0 ) { navOpacity = 0; }
-  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
-  $('.navbar').css({"background-color": navBackColor});
-  
-  var shadowOpacity = navOpacity * 0.4;
-  if ( ySmall > 1) {
-    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
-  } else {
-    $('.navbar').css({"box-shadow": "none"});
-  }
-  
-  
-  
-});</script>
 </body>
-
-
-
 </html>
-
