@@ -259,6 +259,7 @@ a:link,a:visited {
 	/*width: 1200px;*/
 	margin: 30px auto;
 	perspective: 1000;
+	text-align: center;
 }
 
 #projects p{
@@ -467,23 +468,6 @@ a:link,a:visited {
 	-webkit-text-fill-color: transparent;
 }
 
-@media (min-width: 1024px) and (max-width: 1399px) {
-	#projects{
-		margin-left: 20%;
-	}
-}
-
-@media (min-width: 1440px) and (max-width: 1840px){
-	#projects{
-		margin-left: 17%;
-	}
-}
-
-@media (min-width: 2560px){
-	#projects{
-		margin-left: 14%;
-	}
-}
 
 
 
