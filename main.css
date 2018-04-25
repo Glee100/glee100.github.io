@@ -74,7 +74,7 @@
 			border-top: solid 5px;
 			text-align: center;
 		}
-
+/*
 		hr.star-light:after,
 		hr.star-primary:after {
 			content: "\f005";
@@ -84,16 +84,16 @@
 			padding: 0 .25em;
 			font-family: FontAwesome;
 			font-size: 2em;
-		}
-
+		}*/
+/*
 		hr.star-light {
 			border-color: #fff;
-		}
+		}*/
 
-		hr.star-light:after {
+		/*hr.star-light:after {
 			color: #fff;
 			background-color: #18bc9c;
-		}
+		}*/
 
 		hr.star-primary {
 			border-image: linear-gradient(to right, #355C7D 0%, #C06C84 100%);
@@ -103,7 +103,7 @@
 		hr.star-primary:after {
 			border-image: linear-gradient(to right, #355C7D 0%, #C06C84 100%);
 			border-image-slice: 1;
-			background-color: #fff;
+			/*background-color: #fff;*/
 		}
 
 		section.primary h2{    
