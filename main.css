@@ -34,7 +34,7 @@
 		}
 		/* HERE ENDS THE MAGIC */
 		header .container {
-			padding-top: 150px;
+			padding-top: 30vh;
 			padding-bottom: 50px;
 		}
 
@@ -42,7 +42,7 @@
 			display: block;
 			margin: 0 auto 20px;
 		}
-
+		
 		header .intro-text .name {
 			display: block;
 			font-family: 'Rubik Mono One'; 
@@ -467,7 +467,4 @@ a:link,a:visited {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
-
-
 
