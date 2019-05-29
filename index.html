@@ -1,278 +1,936 @@
 <html>
-<head>
-    <meta charset="UTF-8">
-	<meta title="Software and Game Developer | Gene Lee">
-	<title>About | Gene Lee</title>
-	<meta name="description" content="Gene Lee is a game designer and web developer student from Virginia. This is my portfolio showcasing my game development and web development work.">
-	<meta name="keywords" content="game design, GMU portfolio, gmu student portfolio, game design student, game design portfolio, gene lee, gene lee gmu, gmu game design, gmu game student, DC game design">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Gene Lee - Web Developer" />
+    <title>About | Gene Lee</title>
 
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&effect=3d-float"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#page-top">Gene Lee</a>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <style></style>
+    <style>
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+
+      @media (max-width: 320px) {
+        .newsocial li {
+          margin: 0 13 !important;
+        }
+      }
+
+      @media (min-width: 321px) and (max-width: 375px) {
+        .newsocial li {
+          margin: 0 22 !important;
+        }
+      }
+
+      @media (min-width: 376px) and (max-width: 425px) {
+        .newsocial li {
+          margin: 0 30 !important;
+        }
+      }
+
+      @media (max-width: 425px) {
+        .project {
+          width: 100%;
+          height: 250px;
+        }
+
+        .project-hover {
+          padding: 10% 30px !important;
+        }
+
+        h1 {
+          font-size: 3em !important;
+        }
+      }
+
+      @media (min-width: 426px) and (max-width: 769px) {
+        .project {
+          height: 400px;
+        }
+      }
+
+      @media (min-width: 2560px) {
+        .container {
+          max-width: 1440px;
+        }
+        h1 {
+          font-size: 12em !important;
+        }
+        .main-p {
+          margin: 32px;
+          font-size: 42px !important;
+        }
+        h2 {
+          font-size: 3.5rem;
+        }
+        .skill__type {
+          font-size: 1.2rem !important;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+        .fa-2x {
+          font-size: 3em;
+        }
+        .filter-button {
+          font-size: 2rem !important;
+        }
+        .ul-social {
+          font-size: 1.4rem !important;
+        }
+      }
+
+      .video-container {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #myVideo {
+        position: absolute;
+        right: 0;
+        /*bottom: 0;*/
+        /*         width: 100%;
+ */ /*min-height: 100%;*/
+      }
+
+      /* Add some content at the bottom of the video/page */
+      .main-content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .scroll-container {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin: 0 auto;
+        margin-top: 32px;
+        text-align: center;
+      }
+
+      .arrow {
+        text-align: center;
+        margin: 8% 0;
+      }
+
+      .arrow a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+
+      footer {
+        color: #fff;
+        background: linear-gradient(to right, #C06C84, #355C7D);
+        font-family: "PT Sans", sans-serif;
+        padding-top: 32px;
+        padding-bottom: 30px;
+      }
+
+      .ul-social {
+        list-style: none;
+        margin-top: 3rem;
+        margin-left: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        text-align: center;
+      }
+      .ul-social li {
+        display: inline-block;
+        padding-left: 0;
+        margin-right: 0.9rem;
+        line-height: 3.9rem;
+        vertical-align: middle;
+      }
+      .ul-social li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .filter-button {
+        font-size: 18px;
+        border: 1px solid #355c7d;
+        border-radius: 5px;
+        text-align: center;
+        color: #355c7d;
+        margin-bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .filter-button:hover {
+        font-size: 18px;
+        border: 1px solid #355c7d;
+        border-radius: 5px;
+        text-align: center;
+        color: #ffffff;
+        background: #355C7D;
+      }
+      .btn-default:active .filter-button:active {
+        background: #9662af;
+        color: white;
+      }
+
+      .port-image {
+        width: 100%;
+      }
+
+      .gallery_product {
+        margin-bottom: 30px;
+      }
+
+      .u-center {
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+      .skills {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .skill {
+        margin: 1em 0;
+        position: relative;
+        width: 22.5em;
+      }
+      .skill__type {
+        color: linear-gradient(to right, #355c7d, #c06c84);
+        font-weight: 300;
+        font-size: 0.85rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        width: 5em;
+        font-family: "Montserrat", sans-serif;
+      }
+      .skill__outer-bar,
+      .skill__inner-bar {
+        height: 0.9em;
+      }
+      .skill__outer-bar {
+        background: #333;
+      }
+      .skill__inner-bar {
+        animation: fillBar 1s forwards;
+        background: linear-gradient(to right, #355c7d, #c06c84);
+        left: 5em;
+        transform: scaleX(0);
+        transform-origin: 0 0;
+      }
+      .skill__inner-bar--100 {
+        width: 100%;
+      }
+      .skill__inner-bar--90 {
+        width: 90%;
+      }
+      .skill__inner-bar--80 {
+        width: 80%;
+      }
+      .skill__inner-bar--85 {
+        width: 85%;
+      }
+      .skill__inner-bar--70 {
+        width: 70%;
+      }
+      @keyframes fillBar {
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      .port-container {
+        position: relative;
+        /*         width: 200px;
+        height: 200px; */
+        display: inline-block;
+      }
+      .port-container .image {
+        display: block;
+        /*         width: 200px;
+        height: 200px; */
+      }
+      .port-overlay {
+        position: absolute;
+        transition: all 0.3s ease;
+        opacity: 0;
+        transition: 0.9s;
+        background: #C06C84;
+      }
+
+      .port-overlay button {
+        color: rgba(255, 255, 255, 1);
+        padding: 2px 22px;
+        line-height: 40px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+      }
+
+      /*       .port-overlay a:hover {
+        border-color: rgba(51, 51, 51, 1);
+        color: rgba(51, 51, 51, 1);
+        background-color: #fff;
+      } */
+
+      .port-container:hover .port-overlay {
+        opacity: 0.9;
+      }
+      .port-overlay .text {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        text-transform: capitalize;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        background-color: transparent;
+      }
+
+      .port-overlayFade {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background:#C06C84; 
+      }
+
+      .btn-close{
+        background-color: #c06c84;
+        color: #fff;
+      }
+
+      .btn-close:hover{
+        color: #fff;
+      }
+
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      @-moz-keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0% 50%
+        }
+      }
+
+      hr.hrlight{
+        margin: 25px auto 30px;
+        padding: 0;
+        max-width: 350px;
+        border: 0;
+        border-top: solid 5px;
+        text-align: center;
+        color:#fff;
+      }
+
+    hr.hrcolor{
+      margin: 25px auto 30px;
+        padding: 0;
+        max-width: 250px;
+        border: 0;
+        border-top: solid 5px;
+        text-align: center;
+        border-image: linear-gradient(to right, #355C7D 0%, #C06C84 100%);
+    border-image-slice: 1;
+    }
+
+    .modal-body .row{
+      padding: 5px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div
+    class="hidden-xs video-container"
+    style="	background: linear-gradient(-45deg, #E73C7E, #C06C84,#355C7D, #9662af); background-size: 400% 400%; -webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite; animation: Gradient 15s ease infinite;"
+  >
+      <div style="position: relative; margin-top:30vh;">
+        <h1
+          class="font-effect-3d-float"
+          data-aos="fade-left"
+          data-aos-duration="2600"
+          data-aos-once="true"
+          style="
+        text-align: center;
+        font-family: 'Rubik Mono One';
+        font-size: 8em;
+        "
+        >
+          Gene Lee
+        </h1>
+        <hr class="hrlight">
+        <p
+          class="main-p"
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="200"
+          data-aos-once="true"
+          style="font-size: 28px; text-align: center;color: #eee;  font-family: 'Montserrat', sans-serif;"
+        >
+          Web Developer
+        </p>
+        <p
+          class="main-p"
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="300"
+          data-aos-once="true"
+          style="font-size: 28px; text-align: center;color: #eee; font-family: 'Montserrat', sans-serif;"
+        >
+          Game Designer
+        </p>
+      </div>
+
+      <div class="scroll-container" style="margin-top: 10vh;">
+        <div class="arrow bounce">
+          <a class="fa fa-arrow-down fa-2x " href="#about"></a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+      </div>
     </div>
-    <!-- /.container-fluid -->
-</nav>
-<header id="page-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-text">
-				    <span class="name font-effect-3d-float">Gene Lee</span>
-                    <hr class="star-light">
-                    <p class="skills">Web Developer</p>
-                    <p class="skills">Game Designer</p>
-                </div>
-            </div>
+
+    <div class="container" id="about">
+      <div class="row" style="margin: 48px 0;">
+        <div class="col-lg-12 text-center">
+          <h2 style="color: #777;font-family: 'Montserrat', sans-serif;">
+            About
+          </h2>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p
+            style="font-family: 'Montserrat', sans-serif; font-size: 1.8em; line-height: 2;"
+          >
+            I am a full-stack web developer based in Virginia. I also develop
+            games.
+          </p>
+          <p
+            style="font-family: 'Montserrat', sans-serif; font-size: 1.8em; line-height: 2;"
+          >
+            I specialize in making responsive websites and UI/UX design.
+          </p>
+        </div>
+        <div class="u-center col-md-6">
+          <section class="skills">
+            <div class="skill">
+              <h3 class="skill__type">HTML</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--90"></div>
+              </div>
+            </div>
+            <!-- End of .skill -->
+            <div class="skill">
+              <h3 class="skill__type">CSS</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--90"></div>
+              </div>
+            </div>
+            <!-- End of .skill -->
+            <div class="skill">
+              <h3 class="skill__type">JS</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--90"></div>
+              </div>
+            </div>
+            <!-- End of .skill -->
+            <div class="skill">
+              <h3 class="skill__type">.NET/C#</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--85"></div>
+              </div>
+            </div>
+            <!-- End of .skill -->
+            <div class="skill">
+              <h3 class="skill__type">Java</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--80"></div>
+              </div>
+            </div>
+            <!-- End of .skill -->
+            <div class="skill">
+              <h3 class="skill__type">Python</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--70"></div>
+              </div>
+            </div>
+            <!-- End of .skill -->
+            <div class="skill">
+              <h3 class="skill__type">SQL</h3>
+              <div class="skill__outer-bar">
+                <div class="skill__inner-bar skill__inner-bar--70"></div>
+              </div>
+            </div>
+          </section>
+          <!-- End of .skills -->
+        </div>
+        <!-- End of .u-center -->
+      </div>
     </div>
-</header>
-<div class="content-wrapper">
 
-	<section>
-	<div class="container">
-	        <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style="color: #777;">Skills</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="skill-block">
-							<div class="sk-border">
-								<span><i class="skill-icon fa fa-columns"></i></span>
-							</div>
-							<div class="sk-text">
-								<h4>Front end</h4>
-								<p>HTML</p>
-								<p>CSS</p>
-								<p>Bootstrap</p>
-								<p>Javascript</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="skill-block">
-							<div class="sk-border">
-								<span><i class="skill-icon fa fa-code"></i></span>
-							</div>
-							<div class="sk-text">
-								<h4>Programming</h4>
-								<p>Java</p>
-								<p>Python</p>
-								<p>.NET/c#</p>
-								<p>SQL</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="skill-block">
-							<div class="sk-border">
-								<span><i class="skill-icon fa fa-camera-retro"></i></span>
-							</div>
-
-							<div class="sk-text">
-								<h4>Design</h4>
-								<p>Website</p>
-								<p>UI/UX</p>
-								<p>Game Design</p>
-								<p>CMS</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="skill-block">
-							<div class="sk-border">
-								<span><i class="skill-icon fa fa-gamepad"></i></span>
-							</div>
-
-							<div class="sk-text">
-								<h4>Game Dev</h4>
-								<p>Unity 3d</p>
-								<p>Unreal Engine</p>
-								<p>Maya/3DS Max</p>
-								<p>Steam VR</p>	
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-			
-		</div>
-	</div>	
-	</section>
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-					<p>I am a junior web developer based in Virginia.</p>
-					<p>I also make games.</p>
-            <p>Take a look at my <a href='Resume%20Gene%20Lee.pdf' target="_blank" style="color: #d5a95a; text-decoration:none;"><strong>resume</strong></span> <a style="color: #fff; text-decoration: none;" href='Resume%20Gene%20Lee.pdf' target="_blank">here</a></p>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" style="margin: 48px 0;">
+          <h2 style="color: #777;font-family: 'Montserrat', sans-serif;">
+            Portfolio
+          </h2>
         </div>
-    </section>
-	<section id="portfolio">
-	    <div class="container">
+
+        <div class="col-lg-12 text-center">
+          <button class="btn btn-default filter-button" data-filter="all">
+            All
+          </button>
+          <button class="btn btn-default filter-button" data-filter="websites">
+            Websites
+          </button>
+          <button class="btn btn-default filter-button" data-filter="games">
+            Games
+          </button>
+          <button class="btn btn-default filter-button" data-filter="personal">
+            Personal Projects
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="gallery_product col-xs-6 col-sm-6 col-md-4 filter websites">
+          <div class="port-container">
+            <img
+              src="/images/DG-logo.png"
+              class="img-fluid"
+              height="320"
+              width="450"
+            />
+            <div class="port-overlay port-overlayFade">
+              <button class="text" data-toggle="modal" data-target="#modal-dg">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery_product col-xs-6 col-sm-6 col-md-4 filter websites">
+          <div class="port-container">
+            <img
+              src="/dgm2.png"
+              class="img-fluid"
+              height="320"
+              width="450"
+            />
+            <div class="port-overlay port-overlayFade">
+                <button class="text" data-toggle="modal" data-target="#modal-dgm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery_product col-xs-6 col-sm-6 col-md-4 filter websites">
+          <div class="port-container">
+            <img
+              src="/rm2.png"
+              class="img-fluid"
+              height="320"
+              width="450"
+            />
+            <div class="port-overlay port-overlayFade">
+                <button class="text" data-toggle="modal" data-target="#modal-rm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="gallery_product col-xs-6 col-sm-6 col-md-4 filter websites personal"
+        >
+          <div class="port-container">
+            <img
+              src="/images/genes-jeans.PNG"
+              class="img-fluid"
+              height="320"
+              width="450"
+            />
+            <div class="port-overlay port-overlayFade">
+                <button class="text" data-toggle="modal" data-target="#modal-gj">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery_product col-xs-6 col-sm-6 col-md-4 filter games">
+          <div class="port-container">
+            <img
+              src="/mvg.png"
+              class="img-fluid"
+              height="320"
+              width="450"
+            />
+            <div class="port-overlay port-overlayFade">
+                <button class="text" data-toggle="modal" data-target="#modal-mvg">View</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="modal-dg">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row" >
+              <p style="margin: 0 auto;">
+                  <img
+                  src="/images/DG-logo.png"
+                  class="img-fluid "
+                  height="320"
+                  width="450"
+                />
+              </p>
+            </div>
+            <hr class="hrcolor">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style="color: #777;">Portfolio</h2>
-                    <hr class="star-primary">
+              <p style="margin: 0 auto;">.Net MVC, Responsive Design, HTML, CSS, JavaScript. Visit 
+                  <a href="https://www.dullesglass.com">here</a></p>
+            </div>
+            <div class="row">
+              <p>
+                <ul style="margin: 0 auto;">
+                <li>Developed and maintained using the .NET Core MVC framework in the frontend and backend</li>
+                <li>Implemented a feature that allows users to customize a product and get a calculated price</li>
+              </ul>
+            </p>
+            </div>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+      <!-- The Modal -->
+  <div class="modal fade" id="modal-dgm">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row" >
+              <p style="margin: 0 auto;">
+                  <img
+                  src="/dgm2.png"
+                  class="img-fluid "
+                  height="320"
+                  width="450"
+                />
+              </p>
+            </div>
+            <hr class="hrcolor">
+            <div class="row">
+              <p style="margin: 0 auto;">.Net MVC, Responsive Design, HTML, CSS, JavaScript. Visit 
+                  <a href="https://www.dullesglassandmirror.com">here</a></p>
+            </div>
+            <div class="row">
+                <p >
+                  <ul style="margin: 0 auto;">
+                    <li>Developed and maintained using the .NET MVC framework in the frontend and backend</li>
+                    <li>Updated website to a new mobile responsive design</li>
+                    <li>Updated database and managed inventory</li>
+                  </ul>
+                </p>
+              </div>
+            <div class="row">
+                <p style="margin: 0 auto;">I implemented the homepage shown below in HTML, CSS, and JS, using a photoshop design provided by a web designer.</p>
+              </div>
+            <hr class="hrcolor">
+            <div class="row" style="padding: 20px;">
+              <p style="margin: 0 auto;">
+                <img
+                src="/dgm-home.png"
+                class="img-fluid " 
+
+              />
+            </p>
+            </div>
+
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+      <!-- The Modal -->
+      <div class="modal fade" id="modal-rm">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">           
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="row" >
+                  <p style="margin: 0 auto;">
+                      <img
+                      src="/rm2.png"
+                      class="img-fluid "
+                      height="320"
+                      width="450"
+                    />
+                  </p>
+                </div>
+                <hr class="hrcolor">
+                <div class="row">
+                  <p style="margin: 0 auto;">Responsive Design, HTML, CSS, JavaScript. Visit 
+                      <a href="https://ronmakhouli.com">here</a></p>
+                </div>
+                <div class="row">
+                  <p style="margin: 0 auto;">I designed and developed a responsive portfolio site to showcase game development projects.</p>
+                </div>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+              <!-- The Modal -->
+      <div class="modal fade" id="modal-gj">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+          
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="row" >
+                <p style="margin: 0 auto;">
+                    <img
+                    src="/images/genes-jeans.png"
+                    class="img-fluid "
+                    height="320"
+                    width="450"
+                  />
+                </p>
+              </div>
+              <hr class="hrcolor">
+              <div class="row">
+                <p style="margin: 0 auto;">Genes Jeans is a mock online clothing store home webpage I made using HTML, CSS, Bootstrap and javascript.
+                </p>
+              </div>
+              <div class="row">
+                  <p style="margin: 0 auto;">I used royalty free images for this project.
+                    <a href="/project/genesmockshop.html">Visit here</a>
+                  </p>
                 </div>
             </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
         </div>
-		<ul id="projects">
-			<li id="p1" class="flipper">
-				<div class="front"><img height="640" width="900"  src="/images/DG-logo.png" alt=""></div>
-				<div class="back">
-					<h2>Dulles Glass</h2>
-					</br>
-					<p>.Net MVC, Responsive Design, HTML, CSS, JavaScript</p>
-						<p>Visit 
-					<a href="https://www.dullesglass.com">here</a></p>
-				</div>
-			</li>
-			<li id="p2" class="flipper">
-			  <div class="front"><img height="640" width="900"  src="/DGM2.png" alt="">
-			  </div>
-			  <div class="back">
-				  <h2>Dulles Glass & Mirror</h2>
-				  <br />
-					<p>.Net MVC, Responsive Design, HTML, CSS, JavaScript</p><p>
-					 Visit <a href="https://www.dullesglassandmirror.com">here</a></p>
-			  </div>
-			</li>
-			<li id="p3" class="flipper">
-			  <div class="front"><img height="640" width="900"  src="/rm.PNG" alt=""></div>
-				<div class="back">
-				  <h2>Portfolio Website</h2>
-				  </br>
-				  <p>Responsive Design, HTML, CSS, JavaScript</p>
-				  <p>Visit <a href="https://ronmakhouli.com">here</a></p>
-				</div>
-			</li>
-			<li id="p4" class="flipper">
-			  <div class="front"><img height="640" width="900"  src="/images/genes-jeans.PNG" alt=""></div>
-				<div class="back">
-				  <h2>Genes Jeans</h2>
-				  </br>
-				  <p>Genes Jeans is a mock online clothing store home webpage I made using HTML, CSS, Bootstrap and javascript. I used royalty free images for this project.</p>
-				  	<p>Visit 
-					<a href="/project/genesmockshop.html">here</a></p>
-				</div>
-			</li>
-			<li id="p5" class="flipper">
-					<div class="front"><img height="640" width="900" src="/mvg.png" alt="">
-					</div>
-					<div class="back">
-						  <h2>Man Vs. God</h2>
-							  </br>
-							  <p>Man Vs God is a RTS and VR hybrid game. I am currently working on this as a programmer and designer.</p>
-					</div>
-			</li>
-			
-	</ul>
-	</section>
+      </div>
 
-    
-    <footer class="container" style="min-height:200px; color:#fff;text-align:center;padding-top:50px;">
-        Gene Lee © 2018 
-		<div class="social-container">
-			<ul class="social-icons">
-				<li><a href="Resume%20Gene%20Lee.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a></li>
-				<li><a href="https://github.com/Glee100" target="_blank"><i class="fa fa-git"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/gene-lee-478433100/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-			</ul>
-		</div>
+      <!-- The Modal -->
+      <div class="modal fade" id="modal-mvg">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="row" >
+                <p style="margin: 0 auto;">
+                    <img
+                    src="/mvg.png"
+                    class="img-fluid "
+                    height="320"
+                    width="450"
+                  />
+                </p>
+              </div>
+              <hr class="hrcolor">
+              <div class="row">
+                  <p style="margin: 0 auto;">Unity 3D and C#
+                  </p>
+                </div>
+              <div class="row">
+                <p style="margin: 0 auto;">Man Vs God is a RTS and VR hybrid game. I worked as a programmer and designer.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <footer>
+      <div class="container">
+        <ul class="ul-social">
+          <li>
+            <a href="Resume%20Gene%20Lee.pdf" target="_blank">
+              <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+              <span>Resume</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Glee100" target="_blank">
+              <i class="fa fa-git" aria-hidden="true"></i>
+              <span>Github</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gene-lee-478433100/"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span>Linked In</span>
+            </a>
+          </li>
+        </ul>
+        <div style="margin-top:32px;">
+          <p class="text-center">&copy; 2019 Gene Lee</p>
+        </div>
+      </div>
     </footer>
-</div>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.10.2.min.js"
+    ></script>
 
-<script
-  src="https://code.jquery.com/jquery-1.11.0.min.js"
-  integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
-  crossorigin="anonymous"></script>
-<script type="text/javascript">
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        $(".filter-button").click(function() {
+          var value = $(this).attr("data-filter");
 
-	$(document).ready(function(){
-		
-	  $('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		  if (target.length) {
-			$('html,body').animate({
-			  scrollTop: target.offset().top
-			}, 1000);
-			return false;
-		  }
-		}
-	  });
-	  
+          if (value == "all") {
+            //$('.filter').removeClass('hidden');
+            $(".filter").show("1000");
+          } else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter")
+              .not("." + value)
+              .hide("3000");
+            $(".filter")
+              .filter("." + value)
+              .show("3000");
+          }
+        });
 
-    $('#projects > li').hover(function(){
-	  $(this).siblings().addClass('blur');
-	}, function(){
-	  $(this).removeClass('clicked').siblings().removeClass('blur');
-	  
-	});
+        $('.fa-arrow-down').on('click', function(event) {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({scrollTop: $(hash).offset().top}, 900);
+        });
+            
 
-	$('#projects > li').click(function(e){
-	  $(this).addClass('clicked');
-	});
-});
-
-</script>
-
-</body>
+        if ($(".filter-button").removeClass("active")) {
+          $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+      });
+    </script>
+  </body>
 </html>
